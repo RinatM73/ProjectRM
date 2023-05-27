@@ -49,24 +49,24 @@
 # print(h)
 # print(type(h))
 
-# x = int(input("Введите число:"))
-# x1 = x % 10
-# x2 = x // 10
-# x3 = x2 % 10
-# x4 = x2 // 10
-# x5 = x4 % 10
-# x6 = x1 + x3 + x5
-# print(x1)
-# print(x3)
-# print(x5)
-# print(x6)
+x = int(input("Введите число:"))
+x1 = x % 10
+x2 = x // 10
+x3 = x2 % 10
+x4 = x2 // 10
+x5 = x4 % 10
+x6 = x1 + x3 + x5
+print(x1)
+print(x3)
+print(x5)
+print(x6)
 
 # x = int(input("Введите число 1:" ))
 # y = int(input("Введите число 2:"))
 # print(f"{x}{y}")
 
-x = int(input("Введите градус Цельсия:" ))
-y = 9 / 5 * x + 32
-print("Градусы Фаренгейта")
-print(y)
+# x = int(input("Введите градус Цельсия:" ))
+# y = 9 / 5 * x + 32
+# print("Градусы Фаренгейта")
+# print(y)
 
