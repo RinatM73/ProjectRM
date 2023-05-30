@@ -189,7 +189,9 @@ elif m == 2:
         if d > 29:
             print("Данные введены не верно!")
         elif d == 29:
-            print(f"01.{m + 1:02}.{y}")
+            m = m + 1
+            d = 1
+            print(d,m,y)
         else:
             print(f"{d + 1:02}.{m:02}.{y}")
     else:
@@ -203,7 +205,10 @@ elif m == 12:
     if d > 31:
         print("Данные введены не верно!")
     elif d == 31:
-        print(f"01.01.{y + 1}")
+        m = 1
+        d = 1
+        y = y + 1
+        print(d,m,y)
     else:
         print(f"{d + 1:02}.{m:02}.{y}")
 else:
