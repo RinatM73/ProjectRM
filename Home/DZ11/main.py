@@ -11,22 +11,25 @@
 # start = int(input("Введите начало диапазона: "))
 # end = int(input("Введите конец диапазона: "))
 # print("Все числа диапазона")
-# for i in range(start,end + 1):
+# for i in range(start,end + 1):           
 #     print(i)
-# print("В обратном порядке")
-# for i in range(start - 1,end):
-#     print(end)
-#     end = end - 1
 # print("Все числа кратные 7")
 # for i in range(start,end + 1):
-#     if i % 7 == 0:
+#     if i % 7 == 0:       
 #         print(i)
 # print("Количество чисел кратных 5")
 # n = 1
-# for i in range(start,end + 1):
+# for i in range(start,end):
 #     if i % 5 == 0:
 #         print(n)
-#         n = n + 1
+#         n +=1
+# print("Все числа диапазона в обратном порядке")
+# for i in range(start - 1,end):        
+#     print(end)
+#     end = end - 1
+
+
+
 
 # Задание 3
 

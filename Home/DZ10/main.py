@@ -170,37 +170,47 @@
 d = int(input("Введите дату (ДД): "))
 m = int(input("Введите месяц (ММ): "))
 y = int(input("Введите год (ГГГГ): "))
-if m == 1 or 3 or 5 or 7 or 8 or 10:
+if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10:
     if d > 31:
         print("Данные введены не верно!")
     elif d == 31:
-        print(f"01.{m + 1:02}.{y}")
+        m = m + 1
+        d = 1
+        print(f"{d:02}.{m:02}.{y:02}")
     else:
-        print(f"{d + 1:02}.{m:02}.{y}")
-elif m == 4 or 6 or 9 or 11:
+        d = d + 1
+        print(f"{d:02}.{m:02}.{y:02}")
+elif m == 4 or m == 6 or m == 9 or m == 11:
     if d > 30:
         print("Данные введены не верно!")
     elif d == 30:
-        print(f"01.{m + 1:02}.{y}")
+        m = m + 1
+        d = 1
+        print(f"{d:02}.{m:02}.{y:02}")
     else:
-        print(f"{d + 1:02}.{m:02}.{y}")
+        d = d + 1
+        print(f"{d:02}.{m:02}.{y:02}")
 elif m == 2:
-    if y % 4 == 0 and y % 100 != 0 or y % 400 == 0:
+    if y % 4 == 0:
         if d > 29:
             print("Данные введены не верно!")
         elif d == 29:
             m = m + 1
             d = 1
-            print(d,m,y)
+            print(f"{d:02}.{m:02}.{y:02}")
         else:
-            print(f"{d + 1:02}.{m:02}.{y}")
+            d = d + 1
+            print(f"{d:02}.{m:02}.{y:02}")
     else:
         if d > 28:
             print("Данные введены не верно!")
         elif d == 28:
-            print(f"01.{m + 1:02}.{y}")
+            m = m + 1
+            d = 1
+            print(f"{d:02}.{m:02}.{y:02}")
         else:
-            print(f"{d + 1:02}.{m:02}.{y}")
+            d = d + 1
+            print(f"{d:02}.{m:02}.{y:02}")
 elif m == 12:
     if d > 31:
         print("Данные введены не верно!")
@@ -208,9 +218,10 @@ elif m == 12:
         m = 1
         d = 1
         y = y + 1
-        print(d,m,y)
+        print(f"{d:02}.{m:02}.{y:02}")
     else:
-        print(f"{d + 1:02}.{m:02}.{y}")
+        d = d + 1
+        print(f"{d:02}.{m:02}.{y:02}")
 else:
     print("Данные введены не верно!")
 
