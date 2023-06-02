@@ -3,7 +3,7 @@ reg = 0
 while reg == 0:
     reg_gender = 0
     while reg_gender == 0:
-        gender = input("Выберете пол персонажа\n1 - М\n2 - Ж\n>  ")
+        gender = input("Выберите пол персонажа\n1 - М\n2 - Ж\n>  ")
         if gender == "1":
             gender = "Мужской"
             reg_gender=1
@@ -15,7 +15,7 @@ while reg == 0:
         if reg_gender == 1:
             reg_race = 0
             while reg_race == 0:
-                race = input("Выберете рассу пресонажа\n1 - Человек\n2 - Эльф\n3 - Гном\n4 - Назад\n5 - К началу\n>  ")
+                race = input("Выберите рассу персонажа\n1 - Человек\n2 - Эльф\n3 - Гном\n4 - Назад\n5 - К началу\n>  ")
                 if race == "1":
                     race = "Человек"
                     reg_race = 1
@@ -32,12 +32,12 @@ while reg == 0:
                     reg_gender = 0
                     break
                 else:
-                    print("Ошибка: Выберете из перечисленного")
+                    print("Ошибка: Выберите из перечисленного")
                 if reg_race == 1:
                     reg_role = 0
                     if race == "Человек":
                         while reg_role == 0:
-                            role = input("Выберете роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ")
+                            role = input("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ")
                             if role == "1":
                                 role = "Мечник"
                                 reg_role = 1
@@ -54,25 +54,10 @@ while reg == 0:
                                 reg_gender = 0
                                 break
                             else:
-                                print("Ошибка: Выберете из перечисленного")
-                            if reg_role == 1:
-                                reg_name = 0
-                                while reg_name == 0:
-                                    myName = input("Введите имя: ")
-                                    info = input("Вывести информацию о персонаже?\n1 - Да\n2 - Нет\n>  ")
-                                    if info == "1":
-                                        print("Информация о персонаже: ")
-                                        print("Имя: ",myName)
-                                        print("Пол: ",gender)
-                                        print("Раса: ",race)
-                                        print("Роль: ",role)
-                                    elif info == "2":
-                                        reg_gender = 0
-                                    else:
-                                        print("Ошибка: Выберите из перечисленного")
+                                print("Ошибка: Выберите из перечисленного")
                     elif race == "Эльф":
                         while reg_role == 0:
-                            role = input("Выберете роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ")
+                            role = input("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ")
                             if role == "1":
                                 role = "Мечник"
                                 reg_role = 1
@@ -89,13 +74,10 @@ while reg == 0:
                                 reg_gender = 0
                                 break
                             else:
-                                print("Ошибка: Выберете из перечисленного")
-                            if reg_role == 1:
-                                reg_name = 0
-                                break
+                                print("Ошибка: Выберите из перечисленного")      
                     elif race == "Гном":
                         while reg_role == 0:
-                            role = input("Выберете роль пресонажа\n1 - Мечник\n2 - Копейщик\n3 - Арбалетчик\n4 - Назад\n5 - К началу\n>  ")
+                            role = input("Выберите роль пресонажа\n1 - Мечник\n2 - Копейщик\n3 - Арбалетчик\n4 - Назад\n5 - К началу\n>  ")
                             if role == "1":
                                 role = "Мечник"
                                 reg_role = 1
@@ -112,10 +94,19 @@ while reg == 0:
                                 reg_gender = 0
                                 break
                             else:
-                                print("Ошибка: Выберете из перечисленного")
-                            if reg_role == 1:
-                                reg_name = 0
-                                break
+                                print("Ошибка: Выберите из перечисленного")
                         pass
- 
     reg+=1
+myName = input("Введите имя: ")
+info = input("Вывести информацию о персонаже?\n1 - Да\n2 - Нет\n>  ")
+if info == "1":
+    print("Информация о персонаже: ")
+    print("Имя: ",myName)
+    print("Пол: ",gender)
+    print("Раса: ",race)
+    print("Роль: ",role)
+elif info == "2":
+    print("Персонаж не создан!")
+    
+else:
+    print("Ошибка: Выберите из перечисленного")
