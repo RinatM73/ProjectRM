@@ -23,51 +23,51 @@
 
 # print(f"Имя: {infoPerson['namePerson']}")
 
-# productList = [
-#     {
-#         "nameProduct" : "Хлеб",
-#         "price" : 55,
-#         "count" : 37,
-#         "category" : "Хлебобулочная",
-#     },
-#     {
-#         "nameProduct" : "Молоко",
-#         "price" : 101,
-#         "count" : 20,
-#         "category" : "Молочная",
-#     },
-#     {
-#         "nameProduct" : "Кефир",
-#         "price" : 99,
-#         "count" : 6,
-#         "category" : "Молочная",
-#     },
-# ]
-# for i in range(0,len(productList)):
-#     if productList[i]["category"] == "Молочная":
-#         productList[i]["price"] = productList[i]["price"] * 2
-#         print(f"Название товара - {productList[i]['nameProduct']}")
-#         print(f"Цена - {productList[i]['price']}")
-#         print(f"Количество - {productList[i]['count']}")
-#         print("--------------------------")
+productList = [
+    {
+        "nameProduct" : "Хлеб",
+        "price" : 55,
+        "count" : 37,
+        "category" : "Хлебобулочная",
+    },
+    {
+        "nameProduct" : "Молоко",
+        "price" : 101,
+        "count" : 20,
+        "category" : "Молочная",
+    },
+    {
+        "nameProduct" : "Кефир",
+        "price" : 99,
+        "count" : 6,
+        "category" : "Молочная",
+    },
+]
+for i in range(0,len(productList)):
+    if productList[i]["category"] == "Молочная":
+        productList[i]["price"] = productList[i]["price"] * 2
+        print(f"Название товара - {productList[i]['nameProduct']}")
+        print(f"Цена - {productList[i]['price']}")
+        print(f"Количество - {productList[i]['count']}")
+        print("--------------------------")
 
-# Добавление объектов в пустые массивы
+# # Добавление объектов в пустые массивы
 
-guestList = []
-while True:
-    nameGuest = input("Введите имя гостя: ")
-    ageGuest = int(input("Введите возраст гостя: "))
-# выше созданные переменные будут добавляться в объект infoGuest и вставляться в соответсвующие ключи
-# infoGuest - хранит данные гостя
-    infoGuest = {
-        "nameGuest" : nameGuest,
-        "ageGuest" : ageGuest,
-    }
-    guestList.append(infoGuest)
-    if len(guestList) > 3:
-        break
+# guestList = []
+# while True:
+#     nameGuest = input("Введите имя гостя: ")
+#     ageGuest = int(input("Введите возраст гостя: "))
+# # выше созданные переменные будут добавляться в объект infoGuest и вставляться в соответсвующие ключи
+# # infoGuest - хранит данные гостя
+#     infoGuest = {
+#         "nameGuest" : nameGuest,
+#         "ageGuest" : ageGuest,
+#     }
+#     guestList.append(infoGuest)
+#     if len(guestList) > 3:
+#         break
 
-for i in range(0,len(guestList)):
-    print(f"Имя гостя - {guestList[i]['nameGuest']}")
-    print(f"Возраст гостя - {guestList[i]['ageGuest']}")
-    print("-------------------")
+# for i in range(0,len(guestList)):
+#     print(f"Имя гостя - {guestList[i]['nameGuest']}")
+#     print(f"Возраст гостя - {guestList[i]['ageGuest']}")
+#     print("-------------------")
