@@ -108,7 +108,6 @@ while True:
         for i in range(0,len(regList)):
             if myLogin in regList[i]["loginPerson"] and myPassword in regList[i]["passwordPerson"]:
                 print("Вход совершен успешно!")
-                break
             else:
                 print("Неверный логин или пароль!")
                 break
