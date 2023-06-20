@@ -82,6 +82,7 @@
 #Задание 5
 
 regList = []
+reg = 0
 while True:
     vybor = input("Выберите действие\n1 - Регистрация\n2 - Вход\n")
     if vybor == "1":
@@ -96,11 +97,17 @@ while True:
         "loginPerson" : myLogin,
         "passwordPerson" : myPassword,
         }
-        regList.append(inforeg)
-        if myLogin not in regList:
-            print("Вы зарегистрированы!")
+        if myLogin == regList:
+            print("Логин занят, введите другой!")
         else:
-            print("Выберите другой логин!")
+            p = input("Подтвердить регистрацию?\n1 - Да\n2 - Отмена\n")
+            if p == "1":
+                print("Вы зарегестрированы!")
+                regList.append(inforeg)     
+            elif p == "2":
+                break
+            else:
+                print("Ошибка! Выберите действие")
     elif vybor == "2":
         print("Вход")
         myLogin = input("Введите логин: ")
@@ -108,29 +115,30 @@ while True:
         for i in range(0,len(regList)):
             if myLogin in regList[i]["loginPerson"] and myPassword in regList[i]["passwordPerson"]:
                 print("Вход совершен успешно!")
+                vybor1 = input("Выберите действие\n1 - Просмотр информации\n2 - Выйти\n3 - Редактировать данные\n")
+                for i in range(0,len(regList)):
+                    if vybor1 == "1":
+                        print(f"Имя - {regList[i]['namePerson']}")
+                        print(f"Фамилия - {regList[i]['surnamePerson']}")
+                        print(f"Логин - {regList[i]['loginPerson']}")
+                        reg = 0
+                    elif vybor1 == "2":
+                        break
+                    elif vybor1 == "3":
+                        print("Редактирование данных")
+                        redName = input("Введите имя: ")
+                        redSurname = input("Введите фамилию: ")
+                        redPassword = input("Введите пароль: ")
+                        if regList[i]["namePerson"] == myName or regList[i]["surnamePerson"] == mySurname or regList[i]["surnamePerson"] == myPassword:
+                            regList[i]["namePerson"] = redName
+                            regList[i]["surnamePerson"] = redSurname
+                            regList[i]["passwordPerson"] = redPassword
+                            print("Изменения сохранены!")
+                        else:
+                            print("Ошибка! Выберите действие")
             else:
                 print("Неверный логин или пароль!")
-                break
-        vybor1 = input("Выберите действие\n1 - Просмотр информации\n2 - Выйти\n3 - Редактировать данные\n")
-        if vybor1 == "1":
-            print(f"Имя - {regList[i]['namePerson']}")
-            print(f"Фамилия - {regList[i]['surnamePerson']}")
-            print(f"Логин - {regList[i]['loginPerson']}")
-        elif vybor1 == "2":
-            break
-        elif vybor1 == "3":
-            print("Редактирование данных")
-            redName = input("Введите имя: ")
-            redSurname = input("Введите фамилию: ")
-            redPassword = input("Введите пароль: ")
-            if regList[i]["namePerson"] == myName or regList[i]["surnamePerson"] == mySurname or regList[i]["surnamePerson"] == myPassword:
-                regList[i]["namePerson"] = redName
-                regList[i]["surnamePerson"] = redSurname
-                regList[i]["passwordPerson"] = redPassword
-                print("Изменения сохранены!")
-            else:
-                print()
     else:
         print("Ошибка! Выберите действие")
-
+        
 
