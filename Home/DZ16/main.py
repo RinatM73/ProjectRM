@@ -164,7 +164,7 @@ while True:
                     for i in range(0,len(userList)):
                         if regLogin != userList[i]["userLogin"]:
                             regUser["userLogin"] = regLogin
-                        else:
+                        elif len(userList) - 1 == i:
                             print("Данный логин уже занят\nвведите другой")
                             regUser["userLogin"] = ""
                             break
