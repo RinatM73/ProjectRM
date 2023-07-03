@@ -41,7 +41,7 @@ auto["color"] = "green"
 auto["Engine"] = Engine
 print(auto)
 auto["Engine"]["start"]()
-
+auto["Bonnet"]["open"]()
 
 
 # # Основная функция
