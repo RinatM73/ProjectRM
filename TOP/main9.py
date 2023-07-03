@@ -2,45 +2,45 @@
 
 
 
-# # Двигатель и его функции
-# def start():
-#     print("Запуск")
+# Двигатель и его функции
+def start():
+    print("Запуск")
 
-# def stop():
-#     print("Стоп")
+def stop():
+    print("Стоп")
 
-# Engine = {
-#     "start" : start,
-#     "stop" : stop,
-# }
+Engine = {
+    "start" : start,
+    "stop" : stop,
+}
 
-# # Engine["start"]()
-# # Engine["stop"]()
-# def open():
-#     print("Капот открыт")
+# Engine["start"]()
+# Engine["stop"]()
+def open():
+    print("Капот открыт")
 
-# def close():
-#     print("Капот закрыт")
+def close():
+    print("Капот закрыт")
 
-# Bonnet = {
-#     "open" : open,
-#     "close" : close,
-# }
+Bonnet = {
+    "open" : open,
+    "close" : close,
+}
 
-# # Основа авто
-# Car = {
-#     "color" : "",
-#     "marka" : "",
-#     "Engine" : "",
-#     "Bonnet" : ""
-# }
+# Основа авто
+Car = {
+    "color" : "",
+    "marka" : "",
+    "Engine" : "",
+    "Bonnet" : ""
+}
 
-# auto = Car
-# auto["marka"] = "audi"
-# auto["color"] = "green"
-# auto["Engine"] = Engine
-# # print(auto)
-# auto["Engine"]["start"]()
+auto = Car
+auto["marka"] = "audi"
+auto["color"] = "green"
+auto["Engine"] = Engine
+print(auto)
+auto["Engine"]["start"]()
 
 
 
@@ -242,28 +242,28 @@
 
 
 
-class Animal:
-    def __init__(self, name, sound):
-        self.name = name
-        self.sound = sound
+# class Animal:
+#     def __init__(self, name, sound):
+#         self.name = name
+#         self.sound = sound
 
-    def activeSound(self):
-        print(self.sound)
+#     def activeSound(self):
+#         print(self.sound)
 
-class Cat(Animal):
-    def __init__(self, name):
-        super().__init__(name, "Мяу!")
+# class Cat(Animal):
+#     def __init__(self, name):
+#         super().__init__(name, "Мяу!")
 
-    def purr(self):
-        print("Мурлыкает")
+#     def purr(self):
+#         print("Мурлыкает")
 
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name, "Гав!")
+# class Dog(Animal):
+#     def __init__(self, name):
+#         super().__init__(name, "Гав!")
 
-    def digHole(self):
-        print("Копает яму")
+#     def digHole(self):
+#         print("Копает яму")
 
-myCat = Cat("Вася")
-myCat.activeSound()
+# myCat = Cat("Вася")
+# myCat.activeSound()
 
