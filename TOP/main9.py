@@ -142,79 +142,79 @@
 # Классы
 
 
-class Car:
-    def __init__(self, color, marka, engine, cond, light, wheels): # создание переменных для класса(объекта)
-        self.color = color
-        self.marka = marka
-        self.engine = engine
-        self.cond = cond
-        self.light = light
-        self.wheels = wheels
-    # методы - действия с определенным классом
-    def showColor(self):
-        print(self.color)
+# class Car:
+#     def __init__(self, color, marka, engine, cond, light, wheels): # создание переменных для класса(объекта)
+#         self.color = color
+#         self.marka = marka
+#         self.engine = engine
+#         self.cond = cond
+#         self.light = light
+#         self.wheels = wheels
+#     # методы - действия с определенным классом
+#     def showColor(self):
+#         print(self.color)
 
-    def showHP(self):
-        print("Наследуется")
-class Engine:
-    def __init__(self, HP, volume, turbo):
-        self.HP = HP
-        self.volume = volume
-        self.turbo = turbo
+#     def showHP(self):
+#         print("Наследуется")
+# class Engine:
+#     def __init__(self, HP, volume, turbo):
+#         self.HP = HP
+#         self.volume = volume
+#         self.turbo = turbo
 
-    def start(self):
-        print("Запуск")
+#     def start(self):
+#         print("Запуск")
     
-    def stop(self):
-        print("Стоп")
+#     def stop(self):
+#         print("Стоп")
 
-class Cond:
-    def __init__(self, gradleft, gradright):
-        self.gradleft = gradleft
-        self.gradright = gradright
+# class Cond:
+#     def __init__(self, gradleft, gradright):
+#         self.gradleft = gradleft
+#         self.gradright = gradright
 
-    def start(self):
-        print("Запуск кондиционера")
+#     def start(self):
+#         print("Запуск кондиционера")
 
-    def stop(self):
-        print("Стоп")
+#     def stop(self):
+#         print("Стоп")
 
-class Light:
+# class Light:
 
-    def startlow(self):
-        print("Вкл фары ближний")
+#     def startlow(self):
+#         print("Вкл фары ближний")
 
-    def stoplow(self):
-        print("Выкл фары ближний")
+#     def stoplow(self):
+#         print("Выкл фары ближний")
 
-    def starthigh(self):
-        print("Вкл фары дальний")
+#     def starthigh(self):
+#         print("Вкл фары дальний")
 
-    def stophigh(self):
-        print("Выкл фары дальний")
+#     def stophigh(self):
+#         print("Выкл фары дальний")
 
-class Wheels:
-    def __init__(self, width, height, diametr):
-        self.width = width
-        self.height = height
-        self.diametr = diametr
+# class Wheels:
+#     def __init__(self, width, height, diametr):
+#         self.width = width
+#         self.height = height
+#         self.diametr = diametr
 
-    def turnleft(self):
-        print("Повернуть налево")
+#     def turnleft(self):
+#         print("Повернуть налево")
 
-    def turnright(self):
-        print("Повернуть направо")
+#     def turnright(self):
+#         print("Повернуть направо")
 
-myEngine = Engine(120,2,1)
-# twoEngine = Engine(280,2.2)
-myCond = Cond(25,27)
-myLight = Light()
-myWheels = Wheels(225,45,17)
-myAuto = Car("green","audi",myEngine,myCond,myLight,myWheels)
-myAuto.cond.start()
-myAuto.light.starthigh()
-myAuto.wheels.turnleft()
-print(myAuto.engine.HP)
+# myEngine = Engine(120,2,1)
+# # twoEngine = Engine(280,2.2)
+# myCond = Cond(25,27)
+# myLight = Light()
+# myWheels = Wheels(225,45,17)
+# myAuto = Car("green","audi",myEngine,myCond,myLight,myWheels)
+# myAuto.cond.start()
+# myAuto.light.starthigh()
+# myAuto.wheels.turnleft()
+# print(myAuto.engine.HP)
 
 # # Наследование
 
@@ -238,11 +238,12 @@ print(myAuto.engine.HP)
 # twoAuto = SportCar("blue","lamborgini", lamborginiEngine,cond, light, wheels, 2)
 
 
+# Абстрактные классы
 
 
-
-
-# class Animal:
+# from abc import ABC, abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
 #     def __init__(self, name, sound):
 #         self.name = name
 #         self.sound = sound
@@ -264,6 +265,120 @@ print(myAuto.engine.HP)
 #     def digHole(self):
 #         print("Копает яму")
 
+# class Donkey(Animal):
+#     def __init__(self, name):
+#         super().__init__(name, "Иа-иа")
+
+
 # myCat = Cat("Вася")
 # myCat.activeSound()
+
+# myDonkey = Donkey("Осел")
+# myDonkey.activeSound()
+
+
+
+
+
+
+
+# from abc import ABC, abstractmethod
+
+# class Human(ABC):
+#     @abstractmethod
+#     def __init__(self, name, nationality):
+#         self.name = name
+#         self.nationality = nationality
+#         print(self.gender)
+
+# class Man(Human):
+#     def __init__(self, name, nationality):
+#         self.gender = "Мужской"
+#         super().__init__(name, nationality)
+
+# class Woman(Human):
+#     def __init__(self, name, nationality):
+#         self.gender = "Женский"
+#         super().__init__(name, nationality)
+
+# baby = Man("Денис", "Китаец")
+
+
+
+
+
+
+
+
+# from abc import ABC, abstractmethod
+
+# class Grandfather(ABC):
+#     @abstractmethod
+#     def __init__(self, name, hairColor):
+#         self.name = name
+#         self.hairColor = hairColor
+    
+#     def cookingBorscht(self):
+#         print("Готовил вкусный борщ")
+
+#     def repairCar(self):
+#         print("Ремонтировал авто")
+
+# class Father(Grandfather, ABC):
+#     @abstractmethod
+#     def __init__(self, name, hairColor):
+#         super().__init__(self, name, hairColor)
+
+# Ilya = Grandfather("Илья", "Русый")
+# Ilya.cookingBorscht()
+
+# Michael = Father("Михаил", "Русый")
+# Michael = cookingBorscht()
+
+
+
+
+
+
+
+# class Bird():
+
+#     def __init__(self, name, sound) -> None:
+#         self.name = name
+#         self.sound = sound
+
+#     def eat(self):
+#         print("Кушает")
+
+#     def hunting(self):
+#         print("Охотятся")
+
+#     def activeSound(self):
+#         print(self.sound)
+
+# class noFly(Bird):
+
+#     def __init__(self, name, sound="") -> None:
+#         super().__init__(name, sound)
+
+#     def goes(self):
+#         print("Ходит")
+
+# class flyBird(noFly):
+
+#     def __init__(self, name, sound="") -> None:
+#         super().__init__(name, sound)
+
+#     def fly(self):
+#         print("Летает")
+
+# class Crow(flyBird):
+
+#     def __init__(self, name) -> None:
+#         super().__init__(name, "Кар!")
+
+# crow = Crow("Гриша")
+# crow.activeSound()
+
+
 
