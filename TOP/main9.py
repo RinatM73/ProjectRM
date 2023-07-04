@@ -2,46 +2,46 @@
 
 
 
-# Двигатель и его функции
-def start():
-    print("Запуск")
+# # Двигатель и его функции
+# def start():
+#     print("Запуск")
 
-def stop():
-    print("Стоп")
+# def stop():
+#     print("Стоп")
 
-Engine = {
-    "start" : start,
-    "stop" : stop,
-}
+# Engine = {
+#     "start" : start,
+#     "stop" : stop,
+# }
 
-# Engine["start"]()
-# Engine["stop"]()
-def open():
-    print("Капот открыт")
+# # Engine["start"]()
+# # Engine["stop"]()
+# def open():
+#     print("Капот открыт")
 
-def close():
-    print("Капот закрыт")
+# def close():
+#     print("Капот закрыт")
 
-Bonnet = {
-    "open" : open,
-    "close" : close,
-}
+# Bonnet = {
+#     "open" : open,
+#     "close" : close,
+# }
 
-# Основа авто
-Car = {
-    "color" : "",
-    "marka" : "",
-    "Engine" : "",
-    "Bonnet" : ""
-}
+# # Основа авто
+# Car = {
+#     "color" : "",
+#     "marka" : "",
+#     "Engine" : "",
+#     "Bonnet" : ""
+# }
 
-auto = Car
-auto["marka"] = "audi"
-auto["color"] = "green"
-auto["Engine"] = Engine
-print(auto)
-auto["Engine"]["start"]()
-auto["Bonnet"]["open"]()
+# auto = Car
+# auto["marka"] = "audi"
+# auto["color"] = "green"
+# auto["Engine"] = Engine
+# print(auto)
+# auto["Engine"]["start"]()
+# auto["Bonnet"]["open"]()
 
 
 # # Основная функция
@@ -142,79 +142,79 @@ auto["Bonnet"]["open"]()
 # Классы
 
 
-# class Car:
-#     def __init__(self, color, marka, engine, cond, light, wheels): # создание переменных для класса(объекта)
-#         self.color = color
-#         self.marka = marka
-#         self.engine = engine
-#         self.cond = cond
-#         self.light = light
-#         self.wheels = wheels
-#     # методы - действия с определенным классом
-#     def showColor(self):
-#         print(self.color)
+class Car:
+    def __init__(self, color, marka, engine, cond, light, wheels): # создание переменных для класса(объекта)
+        self.color = color
+        self.marka = marka
+        self.engine = engine
+        self.cond = cond
+        self.light = light
+        self.wheels = wheels
+    # методы - действия с определенным классом
+    def showColor(self):
+        print(self.color)
 
-#     def showHP(self):
-#         print("Наследуется")
-# class Engine:
-#     def __init__(self, HP, volume, turbo):
-#         self.HP = HP
-#         self.volume = volume
-#         self.turbo = turbo
+    def showHP(self):
+        print("Наследуется")
+class Engine:
+    def __init__(self, HP, volume, turbo):
+        self.HP = HP
+        self.volume = volume
+        self.turbo = turbo
 
-#     def start(self):
-#         print("Запуск")
+    def start(self):
+        print("Запуск")
     
-#     def stop(self):
-#         print("Стоп")
+    def stop(self):
+        print("Стоп")
 
-# class Cond:
-#     def __init__(self, gradleft, gradright):
-#         self.gradleft = gradleft
-#         self.gradright = gradright
+class Cond:
+    def __init__(self, gradleft, gradright):
+        self.gradleft = gradleft
+        self.gradright = gradright
 
-#     def start(self):
-#         print("Запуск кондиционера")
+    def start(self):
+        print("Запуск кондиционера")
 
-#     def stop(self):
-#         print("Стоп")
+    def stop(self):
+        print("Стоп")
 
-# class Light:
+class Light:
 
-#     def startlow(self):
-#         print("Вкл фары ближний")
+    def startlow(self):
+        print("Вкл фары ближний")
 
-#     def stoplow(self):
-#         print("Выкл фары ближний")
+    def stoplow(self):
+        print("Выкл фары ближний")
 
-#     def starthigh(self):
-#         print("Вкл фары дальний")
+    def starthigh(self):
+        print("Вкл фары дальний")
 
-#     def stophigh(self):
-#         print("Выкл фары дальний")
+    def stophigh(self):
+        print("Выкл фары дальний")
 
-# class Wheels:
-#     def __init__(self, width, height, diametr):
-#         self.width = width
-#         self.height = height
-#         self.diametr = diametr
+class Wheels:
+    def __init__(self, width, height, diametr):
+        self.width = width
+        self.height = height
+        self.diametr = diametr
 
-#     def turnleft(self):
-#         print("Повернуть налево")
+    def turnleft(self):
+        print("Повернуть налево")
 
-#     def turnright(self):
-#         print("Повернуть направо")
+    def turnright(self):
+        print("Повернуть направо")
 
-# myEngine = Engine(120,2)
+myEngine = Engine(120,2,1)
 # twoEngine = Engine(280,2.2)
-# myCond = Cond(25,27)
-# myLight = Light()
-# myWheels = Wheels(225,45,17)
-# myAuto = Car("green","audi",myEngine,myCond,myLight,myWheels)
-# myAuto.cond.start()
-# myAuto.light.starthigh()
-# myAuto.wheels.turnleft()
-# print(myAuto.engine.HP)
+myCond = Cond(25,27)
+myLight = Light()
+myWheels = Wheels(225,45,17)
+myAuto = Car("green","audi",myEngine,myCond,myLight,myWheels)
+myAuto.cond.start()
+myAuto.light.starthigh()
+myAuto.wheels.turnleft()
+print(myAuto.engine.HP)
 
 # # Наследование
 
