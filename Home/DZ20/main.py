@@ -17,33 +17,61 @@ floor = {
 }
 
 House = {
-    "material" : "",
+    "material" : "Кирпич",
     "windows" : {
-        "profiles" : "",
-        "colorW" : ""
+        "profiles" : "Дерево",
+        "colorW" : "Коричневый"
     },
-    "color" : "",
-    "floor" : "",
+    "color" : "Красный",
+    "floor" : "Линолеум",
     "door" : {
-        "materialD" : "",
-        "colorD" : "",
+        "materialD" : "Дерево",
+        "colorD" : "Черный",
     },
-    "levels" : "",
-    "rooms" : "",
+    "levels" : "2",
+    "rooms" : "6",
 }
 
+def showMaterial():
+    print(f"Материал дома - {myHome['material']}")
+
+def showWindowsProfiles():
+    print(f"Материал окон - {myHome['windows']['profiles']}")
+
+def showWindowsColor():
+    print(f"Цвет окон - {myHome['windows']['colorW']}")
+
+def showColor():
+    print(f"Цвет дома - {myHome['color']}")
+
+def showFloor():
+    print(f"Материал пола - {myHome['floor']}")
+
+def showDoorMaterial():
+    print(f"Материал дверей - {myHome['door']['materialD']}")
+
+def showDoorColor():
+    print(f"Цвет дверей - {myHome['door']['colorD']}")
+
+def showLevels():
+    print(f"Количество этажей - {myHome['levels']}")
+
+def showRooms():
+    print(f"Количество комнат - {myHome['rooms']}")
+
+
 myHome = House
-myHome["material"] = "Кирпич"
-myHome["windows"]["profiles"] = "Дерево"
-myHome["windows"]["colorW"] = "Коричневый"
-myHome["color"] = "Красный"
-myHome["floor"] = "Линолеум"
+
+showMaterial()
+showWindowsProfiles()
+showWindowsColor()
+showColor()
+showFloor()
+showDoorMaterial()
+showDoorColor()
+showLevels()
+showRooms()
 myHome["floor"] = floor
-myHome["door"]["materialD"] = "Дерево"
-myHome["door"]["colorD"] = "Черный"
 myHome["door"] = door
-myHome["levels"] = "2 этажа"
-myHome["rooms"] = "6 комнат"
-print(myHome)
 myHome["door"]["open"]()
 myHome["floor"]["off"]()
