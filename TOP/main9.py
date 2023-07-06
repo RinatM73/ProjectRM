@@ -382,3 +382,138 @@
 
 
 
+
+
+
+
+base_list = [
+    {
+        "first_name" : "Денис",
+        "last_name" : "Кириллов",
+        "birthday" : "01.06.2001",
+        "gender" : "Мужской",
+        "login" : "denis161",
+        "password" : "12345"
+    },
+    {
+        "first_name" : "Кирилл",
+        "last_name" : "Кириллов",
+        "birthday" : "17.08.2006",
+        "gender" : "Мужской",
+        "login" : "kirillooo",
+        "password" : "12345"
+    },
+    {
+        "first_name" : "Максим",
+        "last_name" : "Максимович",
+        "birthday" : "01.06.2006",
+        "gender" : "Мужской",
+        "login" : "maks07",
+        "password" : "12345"
+    },
+    {
+        "first_name" : "Руслан",
+        "last_name" : "Русланов",
+        "birthday" : "01.06.2000",
+        "gender" : "Мужской",
+        "login" : "russlan",
+        "password" : "12345"
+    },
+    {
+        "first_name" : "Екатерина",
+        "last_name" : "Исаева",
+        "birthday" : "25.10.2000",
+        "gender" : "Женский",
+        "login" : "ekaterina25",
+        "password" : "12345"
+    },
+
+]
+registered_users = [
+
+]
+
+class User():
+    def __init__(self, user_id, first_name, last_name, birthday, gender, login, password) -> None:
+        self.user_id = user_id
+        self.first_name = first_name
+        self.last_name = last_name
+        self.birthday = birthday
+        self.gender = gender
+        self.login = login
+        self.password = password
+        #-------------------------
+        self.status = "user"
+        self.blocking = False
+
+    # Если в классе есть методы со словом update, значит этот метод для изменения информации
+    def update_first_name(self, new_first_name):
+        self.first_name = new_first_name
+
+    def update_last_name(self, new_last_name):
+        self.last_name = new_last_name
+    
+    def update_birthday(self, new_birthday):
+        self.birthday = new_birthday
+
+    def update_gender(self, new_gender):
+        self.gender = new_gender
+
+    def update_password(self, new_password):
+        if self.password == input("Введите старый пароль: "):
+            self.password = new_password
+
+class Moderator(User):
+    def __init__(self, user_id, first_name, last_name, birthday, gender, login, password):
+        super().__init__(self, user_id, first_name, last_name, birthday, gender, login, password)
+        self.status = "moderator"
+
+    # создаем функцию блокировки списка юзеров
+    def blocking_user(self, user_list):
+        text_user_list = f"id | first_name | blocking | status \n"
+        for i in range(0,len(user_list)):
+            text_user_list += f"{i} - {user_list[i]['user_id']}{user_list[i]['first_name']} - {user_list[i]['blocking']} {user_list[i]['status']}\n"
+        print(text_user_list)
+        input_user_id = int(input("Введите id пользователя для блокировки: "))
+        for i in range(0,len(user_list)):
+            if self.status == "moderator":
+                if input_user_id == i and user_list[i]['status'] != "moderator" and user_list[i]['status'] != "admin":
+                    if user_list[i]['blocking'] == True:
+                        print("Пользователь уже заблокирован")
+                        break
+                    else:
+                        user_list[i]['blocking'] = True
+                        print("Пользователь успешно заблокирован")
+                        break
+            elif self.status == "admin":
+                if input_user_id == i:
+                    if user_list[i]['blocking'] == True:
+                        print("Пользователь уже заблокирован")
+                        break
+                    else:
+                        user_list[i]['blocking'] = True
+                        print("Пользователь успешно заблокирован")
+                        break
+
+class Admin(Moderator):
+    def __init__(self, user_id, first_name, last_name, birthday, gender, login, password):
+        super().__init__(self, user_id, first_name, last_name, birthday, gender, login, password)
+        self.status = "admin"
+    
+    def delete_user_list(self, user_list):
+        user_list.clear()
+        print("База данных пуста")
+
+    def create_user_list(self, massiv, user_list):   # massiv - массив данных
+        for i in range(0,len(massiv)):
+            user_list.append(User(user_id=i,
+                                first_name = massiv[i]["first_name"],
+                                last_name = massiv[i]["last_name"],
+                                birthday = massiv[i]["birthday"],
+                                gender = massiv[i]["gender"],
+                                login = massiv[i]["login"],
+                                password = massiv[i]["password"]))
+
+myAdmin = Admin(10, "admin", "admin", "01.01.1970", "Мужской", "admin", "admin")
+myAdmin.create_user_list(base_list,registered_users)
+print(registered_users)
