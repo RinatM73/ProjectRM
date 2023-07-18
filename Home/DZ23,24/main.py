@@ -100,6 +100,32 @@ class Moderator(User):
                         print("пользователь успешно заблокирован")
                         break
 
+    def unblocking_user(self, users_list):
+        text_user_list = f"id | first_name | blocking | status \n"
+        for i in range(0,len(users_list)):
+            text_user_list += f"{users_list[i].user_id}    {users_list[i].first_name}         {users_list[i].blocking}      {users_list[i].status}\n"
+        print(text_user_list)
+        input_user_id = int(input("Введите id пользователя для разблокировки"))
+        for i in range(0,len(users_list)):
+            if self.status == "moderator":
+                if input_user_id == i and users_list[i].status != "moderator" and users_list[i].status != "admin":
+                    if users_list[i].blocking == False:
+                        print("пользователь уже разблокирован")
+                        break
+                    else:
+                        users_list[i].blocking = False
+                        print("пользователь успешно разблокирован")
+                        break
+            elif self.status == "admin":
+                if input_user_id == i:
+                    if users_list[i].blocking == False:
+                        print("пользователь уже разблокирован")
+                        break
+                    else:
+                        users_list[i].blocking = False
+                        print("пользователь успешно разблокирован")
+                        break
+
 class Admin(Moderator):
     def __init__(self, user_id, first_name, last_name, birthday, gender, login, password):
         super().__init__(user_id, first_name, last_name, birthday, gender, login, password)
@@ -118,6 +144,8 @@ class Admin(Moderator):
                                 login=massiv[i]["login"],
                                 password=massiv[i]["password"]))
 
+
 myAdmin = Admin(10,"admin","admin","01.01.1970","Мужской","admin","admin")
 myAdmin.create_user_list(base_list,registered_users)
 myAdmin.blocking_user(registered_users)
+myAdmin.unblocking_user(registered_users)

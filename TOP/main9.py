@@ -525,7 +525,7 @@ class Registration():
 class Inlog():
     def __init__(self, login, password):
         self.login = login
-        self.password - password
+        self.password = password
 
     def log_in_account(self,users_list):
         for i in range(len(users_list)):
@@ -539,7 +539,7 @@ class Inlog():
 class Manager():
     def __init__(self,reg,inlog,userModerAdmin,datalist):
         self.reg = reg
-        self.inlog - inlog
+        self.inlog = inlog
         self.userModerAdmin = userModerAdmin
         self.datalist = datalist
 
@@ -547,9 +547,9 @@ class Manager():
         print(self)
 
 my_reg = Registration
-my_inLog = InLog
+my_inLog = Inlog
 my_person_list = [User,Moderator,Admin]
-base = []
+my_base = []
 myManager = Manager(my_reg,my_inLog,my_person_list,my_base)
 myManager.userModerAdmin[0](10,"admin","admin","01.01.1970","Мужской","admin","admin")
 myManager.inlog("admin","admin")
