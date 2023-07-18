@@ -1,72 +1,90 @@
-﻿#int = 1 # целые числа (int)
-#type_float = 1.23 # числа с точкой
-#type_str = "Строки пишутся в кавычках"
-#type_bool_one = True # булевы значения истина(правда) bool()
-#type_bool_two = False # булевы значения ложь
-#type_none = None
+# base_list - база данных как SQL, не может хранить классы, функции и методы, она храниться где-то на сервере
 
-# a = 123
-# print(a * 2, type(a)) #int
-# a = str(a) # str
-# print(a * 2, type(a)) #str
-# a = float(a) #float
-# print(a * 2, type(a))
+# base_list = [
+#     {
+#         "first_name" : "Денис",
+#         "last_name" : "Кириллов",
+#         "birthday" : "01.06.2001",
+#         "gender" : "Мужской",
+#         "login" : "denis161",
+#         "password" : "12345"
+#     },
+#     {
+#         "first_name" : "Кирилл",
+#         "last_name" : "Кириллов",
+#         "birthday" : "17.08.2006",
+#         "gender" : "Мужской",
+#         "login" : "kirillooo",
+#         "password" : "12345"
+#     },
+#     {
+#         "first_name" : "Максим",
+#         "last_name" : "Максимов",
+#         "birthday" : "11.04.2000",
+#         "gender" : "Мужской",
+#         "login" : "maks07",
+#         "password" : "12345"
+#     },
+#     {
+#         "first_name" : "Руслан",
+#         "last_name" : "Русланов",
+#         "birthday" : "11.02.2000",
+#         "gender" : "Мужской",
+#         "login" : "russlan",
+#         "password" : "12345"
+#     },
+#     {
+#         "first_name" : "Екатерина",
+#         "last_name" : "Исаева",
+#         "birthday" : "25.10.2000",
+#         "gender" : "Женский",
+#         "login" : "ekaterina25e",
+#         "password" : "12345"
+#     },
+# ]
+# registered_users = [    # обработанная база данных с сервера, хранит в себе весь функционал пользователей, модераторов и админа.
 
-# b = "123"
-# print(b, type(b))
-# b = int(b)
-# print(b, type(b))
+# ]
 
-# z = (input("Введите число - мы умножим его на 2: "))  # input() - по умолчанию является строкой
-# z = int(z) # из строки сделали число
-# print(z * 2)
+# # r - только чтение файла  read()
+# # w - запись write()
+# # a - добавить в конец файла текст write()
+# # + - чтение и запись
+# fileW = open("text.txt","w",encoding="utf-8")
+# # print(file.read(5)) # показывает первые пять символов
+# fileW.write("Новый текст\n")
+# fileW.write("Новый текст")
+# fileW.close()
 
-# print("Заполните информацию:")
-# Name = input("Введите имя: ")
-# Surname = input("Введите фамилию: ")
-# Аge = input("Введите свой возраст: ")
-# Job = input("Место работы: ")
-# print("Информация о пользователе: ")
-# print(Name)
-# print(Surname)
-# print(Age)
-# print(Job)
+# fileR = open("text.txt","r",encoding="utf-8")
+# print(fileR.read())
+# fileR.close()
 
-# myName = "Rinat"
-# print("привет" + " " + myName)
-# print("привет" + " " + "мир!")
-# print(f"привет {}")
-# print("привет"," ","мир!")
+import json
+# открыли файл с возможностью чтения
+base_list = open("base.json","r",encoding="utf-8")
+# открыли файл на чтение
+base_list_read = base_list.read()
+new_base = json.load(base_list_read) # 
+new_base.append({
+        "first_name" : "Собака",
+        "last_name" : "",
+        "birthday" : "17.08.2006",
+        "gender" : "Мужской",
+        "login" : "dog",
+        "password" : "12345"
+})
+print(new_base[5])
+dumps_base = json.dumps(new_base) # из массива сделали строку
+file = open("base.json","w",encoding="utf-8")
+file.write
 
-# x = int(input("введите число: "))
-# print(x // 10)
-# print(x % 10)
 
-# a = 3
-# b = 2
-# h = a / b * 10
 
-# print(h)
-# print(type(h))
+# primer = '[{"first_name" : "Denis", "age" : 22},{"first_name" : "Masha", "age" : 18}]'
+# print(primer)
+# massiv = json.loads(primer)
+# print(massiv[0]) # информация о нулевом объекте массива
 
-x = int(input("Введите число:"))
-x1 = x % 10
-x2 = x // 10
-x3 = x2 % 10
-x4 = x2 // 10
-x5 = x4 % 10
-x6 = x1 + x3 + x5
-print(x1)
-print(x3)
-print(x5)
-print(x6)
 
-# x = int(input("Введите число 1:" ))
-# y = int(input("Введите число 2:"))
-# print(f"{x}{y}")
-
-# x = int(input("Введите градус Цельсия:" ))
-# y = 9 / 5 * x + 32
-# print("Градусы Фаренгейта")
-# print(y)
 
