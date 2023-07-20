@@ -36,6 +36,7 @@ while True:
 
 import json
 
+
 def globalReg():
     if len(guestList) <= 5: # если гостей до 5 включительно задаем три действия
         vybor = int(input("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> "))
@@ -68,7 +69,10 @@ def guestAdd():
 def guestDel():
     if len(guestList) > 0:
         guest_name = input("Введите имя: ")
-        guestList.remove(guest_name) # удаление введенного имени из списка гостей если список не пуст
+        base_list = open("base.json","r",encoding="utf-8")
+        base_list_read = base_list.read()
+        new_base = json.loads(base_list_read)
+        new_base.remove(guest_name) # удаление введенного имени из списка гостей если список не пуст
     else:
         print("Список пуст!")
 
