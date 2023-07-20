@@ -101,6 +101,32 @@ class Moderator(User):
                         print("пользователь успешно заблокирован")
                         break
 
+    def unblocking_user(self, users_list):
+        text_user_list = f"id | first_name | blocking | status \n"
+        for i in range(0,len(users_list)):
+            text_user_list += f"{users_list[i].user_id}    {users_list[i].first_name}         {users_list[i].blocking}      {users_list[i].status}\n"
+        print(text_user_list)
+        input_user_id = int(input("Введите id пользователя для разблокировки"))
+        for i in range(0,len(users_list)):
+            if self.status == "moderator":
+                if input_user_id == i and users_list[i].status != "moderator" and users_list[i].status != "admin":
+                    if users_list[i].blocking == False:
+                        print("пользователь уже разблокирован")
+                        break
+                    else:
+                        users_list[i].blocking = False
+                        print("пользователь успешно разблокирован")
+                        break
+            elif self.status == "admin":
+                if input_user_id == i:
+                    if users_list[i].blocking == False:
+                        print("пользователь уже разблокирован")
+                        break
+                    else:
+                        users_list[i].blocking = False
+                        print("пользователь успешно разблокирован")
+                        break
+
 class Admin(Moderator):
     def __init__(self, user_id, first_name, last_name, birthday, gender, login, password):
         super().__init__(user_id, first_name, last_name, birthday, gender, login, password)
@@ -127,8 +153,16 @@ class Registration():
                                 input("введите фамилию: "),
                                 input("Дата рождения(дд.мм.гггг): "),
                                 input("Введите пол: "),
-                                input("Введдите логин:"),
-                                input("введите пароль: ")))
+                                input("Введите логин:"),
+                                input("Введите пароль: ")))
+        for i in range(0,len(users_list)):
+            if users_list[i].login in base_list.login:
+                print("Логин уже существует")
+            else:
+                print("Вы зарегестрированы")
+
+
+    
 
 class InLog():
     def __init__(self, login, password):
@@ -139,7 +173,7 @@ class InLog():
             if users_list[i].login == self.login and users_list[i].password == self.password:
                 print("вход выполнен")
                 break
-            elif i == len(registered_users):
+            elif i == len(users_list):
                 print("Ошибка")
 
 
@@ -162,3 +196,5 @@ my_base = []
 myManager = Manager(my_reg,my_inLog,my_person_list,my_base)
 myManager.userModerAdmin[0](10,"admin","admin","01.01.1970","Мужской","admin","admin")
 myManager.inlog("admin","admin")
+
+my_reg.create_user(base_list, registered_users)

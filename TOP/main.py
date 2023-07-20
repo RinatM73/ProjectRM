@@ -47,7 +47,7 @@
 # ]
 
 # # r - только чтение файла  read()
-# # w - запись write()
+# # w - перезапись write()
 # # a - добавить в конец файла текст write()
 # # + - чтение и запись
 # fileW = open("text.txt","w",encoding="utf-8")
@@ -65,19 +65,19 @@ import json
 base_list = open("base.json","r",encoding="utf-8")
 # открыли файл на чтение
 base_list_read = base_list.read()
-new_base = json.load(base_list_read) # 
+new_base = json.loads(base_list_read) # из строки сделали массив
 new_base.append({
         "first_name" : "Собака",
         "last_name" : "",
-        "birthday" : "17.08.2006",
+        "birthday" : "17.08.2021",
         "gender" : "Мужской",
         "login" : "dog",
         "password" : "12345"
 })
 print(new_base[5])
-dumps_base = json.dumps(new_base) # из массива сделали строку
+dumps_base = json.dumps(new_base,ensure_ascii=False) # из массива сделали строку
 file = open("base.json","w",encoding="utf-8")
-file.write
+file.write(dumps_base)
 
 
 
