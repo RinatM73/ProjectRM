@@ -1,0 +1,82 @@
+[
+    {
+        "first_name": "Денис",
+        "last_name": "Кириллов",
+        "birthday": "01.06.2001",
+        "gender": "Мужской",
+        "login": "denis161",
+        "password": "12345"
+    },
+    {
+        "first_name": "Кирилл",
+        "last_name": "Кириллов",
+        "birthday": "17.08.2006",
+        "gender": "Мужской",
+        "login": "kirillooo",
+        "password": "12345"
+    },
+    {
+        "first_name": "Максим",
+        "last_name": "Максимов",
+        "birthday": "11.04.2000",
+        "gender": "Мужской",
+        "login": "maks07",
+        "password": "12345"
+    },
+    {
+        "first_name": "Руслан",
+        "last_name": "Русланов",
+        "birthday": "11.02.2000",
+        "gender": "Мужской",
+        "login": "russlan",
+        "password": "12345"
+    },
+    {
+        "first_name": "Екатерина",
+        "last_name": "Исаева",
+        "birthday": "25.10.2000",
+        "gender": "Женский",
+        "login": "ekaterina25e",
+        "password": "12345"
+    },
+    {
+        "first_name": "Собака",
+        "last_name": "",
+        "birthday": "17.08.2021",
+        "gender": "Мужской",
+        "login": "dog",
+        "password": "12345"
+    },
+    {
+        "first_name": "ваы",
+        "last_name": "выа",
+        "birthday": "аыв",
+        "gender": "ыва",
+        "login": "аыв",
+        "password": "ва"
+    },
+    {
+        "first_name": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "last_name": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "birthday": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "gender": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "login": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "password": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py"
+    },
+    {
+        "first_name": "фыв",
+        "last_name": "ааф",
+        "birthday": "фвы",
+        "gender": "фвы",
+        "login": "в",
+        "password": "ф"
+    },
+    {
+        "first_name": "& C:/Users/malay/AppData/Local/Programs/Python/Python311/python.exe e:/Python/rinat/Git/ProjectRM/MyProject/main.py",
+        "last_name": "sa",
+        "birthday": "ads",
+        "gender": "ds",
+        "login": "d",
+        "password": "s"
+    }
+]
