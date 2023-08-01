@@ -139,6 +139,7 @@ def globalReg(x,y,z):
         regSumma()
     elif d == 2:
         regProizv()
+globalReg(x,y,z)
 
 def regSumma(x,y,z):
     a = x + y + z
@@ -153,4 +154,3 @@ def regProizv(x,y,z):
     print(b)
     return b
     globalReg()
-globalReg(x,y,z)

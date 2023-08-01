@@ -1,0 +1,20 @@
+from tkinter import *
+from tkinter.ttk import *
+window = Tk()
+window.title("Кто вы по гороскопу?")
+window.geometry('350x200')
+lbl = Label(window, text="Выберите свою дату рождения")
+lbl.grid(column=0, row=0)
+lbl1 = Label(window, text="День")
+lbl1.grid(column=0, row=1)
+lbl2 = Label(window, text="Месяц")
+lbl2.grid(column=2, row=1)
+combod = Combobox(window)
+combod['values'] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+combod.current(0) #Элемент выбранный по умолчанию
+combod.grid(column=1, row=1)
+combom = Combobox(window)
+combom['values'] = ("Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь")
+combom.current(0)
+combom.grid(column=3, row=1)
+window.mainloop()

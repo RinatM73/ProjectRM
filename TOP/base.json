@@ -62,5 +62,13 @@
         "gender": "Мужской",
         "login": "dog",
         "password": "12345"
+    },
+    {
+        "first_name": "Собака",
+        "last_name": "",
+        "birthday": "17.08.2021",
+        "gender": "Мужской",
+        "login": "dog",
+        "password": "12345"
     }
 ]

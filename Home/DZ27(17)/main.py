@@ -1,7 +1,7 @@
 import json
 
-
 def globalReg():
+
     base_list = open("base.json","r",encoding="utf-8")
     base_list_read = base_list.read()
     new_base = json.loads(base_list_read) # из строки сделали массив
@@ -19,6 +19,7 @@ def globalReg():
 globalReg()
 
 def guestAdd():
+
     base_list = open("base.json","r",encoding="utf-8")
     base_list_read = base_list.read()
     new_base = json.loads(base_list_read) # из строки сделали массив
@@ -47,6 +48,7 @@ def guestAdd():
 guestAdd()
 
 def guestDel():
+
     if len(base_list) > 0:
         guest_name = input("Введите имя: ")
         blackList = open("blackList.json","r",encoding="utf-8")
@@ -74,6 +76,7 @@ def guestDel():
 guestDel()
 
 def listShow():
+    
     if len(base_list) > 0:
         textGuest = ""
         print("Список гостей: ")

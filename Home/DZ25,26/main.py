@@ -156,7 +156,7 @@ class Registration():
                                 input("Введите логин:"),
                                 input("Введите пароль: ")))
         for i in range(0,len(users_list)):
-            if users_list[i].login in registered_users.login:
+            if users_list[i].login in registered_users:
                 print("Логин уже существует")
             else:
                 print("Вы зарегестрированы")
@@ -171,7 +171,7 @@ class InLog():
     def log_in_account(self,users_list):
         for i in range(len(users_list)):
             if users_list[i].login == self.login and users_list[i].password == self.password:
-                print("вход выполнен")
+                print("Вход выполнен")
                 break
             elif i == len(users_list):
                 print("Ошибка")
