@@ -4,6 +4,7 @@ def globalReg():
 
     base_list = open("base.json","r",encoding="utf-8")
     base_list_read = base_list.read()
+    print(base_list_read)
     new_base = json.loads(base_list_read) # из строки сделали массив
     base_list_read.close()
     if len(base_list) <= 5: # если гостей до 5 включительно задаем три действия
