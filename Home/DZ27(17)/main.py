@@ -1,4 +1,6 @@
 import json
+base_list = []
+blackList = []
 
 def globalReg():
 
@@ -6,7 +8,7 @@ def globalReg():
     base_list_read = base_list.read()
     print(base_list_read)
     new_base = json.loads(base_list_read) # из строки сделали массив
-    base_list_read.close()
+    # base_list_read.close()
     if len(base_list) <= 5: # если гостей до 5 включительно задаем три действия
         vybor = int(input("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> "))
     else: # если гостей больше 5 задаем четыре действия
@@ -35,9 +37,7 @@ def guestAdd():
             base_list = open("base.json","r",encoding="utf-8")
             base_list_read = base_list.read()
             new_base = json.loads(base_list_read) # из строки сделали массив
-            new_base.append({
-                    "guest_name" : guest_name
-            }) # добавление введенного имени в список гостей
+            new_base.append(guest_name) # добавление введенного имени в список гостей
             base_list = json.dumps(base_list, ensure_ascii=False)
             base_list_write = open("base.json","w",encoding="utf-8")
             base_list_write.write(base_list)
@@ -55,9 +55,7 @@ def guestDel():
         blackList = open("blackList.json","r",encoding="utf-8")
         blacklist_read = black_list.read()
         new_blackList = json.loads(blackList_read)
-        new_blackList.append({
-                "guest_name" : guest_name
-        })
+        new_blackList.append(guest_name)
         blackList = json.dumps(blackList, ensure_ascii=False)
         blackList_write = open("blackList.json","w",encoding="utf-8")
         blackList_write.write(blackList)
