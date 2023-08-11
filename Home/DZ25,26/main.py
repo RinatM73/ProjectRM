@@ -156,11 +156,10 @@ class Registration():
                                 input("Введите логин:"),
                                 input("Введите пароль: ")))
         for i in range(0,len(users_list)):
-            if users_list[i].login in registered_users:
+            if users_list[i].login in base_list:
                 print("Логин уже существует")
             else:
                 print("Вы зарегестрированы")
-
 
     
 
