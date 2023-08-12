@@ -71,7 +71,7 @@ new_base.append({
         "last_name" : "",
         "birthday" : "17.08.2021",
         "gender" : "Мужской",
-        "login" : "dog",
+        "login" : ";jgf",
         "password" : "12345"
 })
 print(new_base[5])
