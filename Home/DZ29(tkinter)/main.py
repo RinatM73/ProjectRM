@@ -3,8 +3,8 @@ from tkinter.ttk import *
 window = Tk()
 window.title("Кто вы по гороскопу?")
 window.geometry('600x400+500+200')
-
-def horoscope():
+sign = ""
+def horoscope(sign, combom, combod):
     if (combom['values'] == "Март" and combod['values'] >= 21) or (combom['values'] == "Апрель" and combod['values'] <= 20):
         sign = "Овен"
     elif (combom['values'] == "Апрель" and combod['values'] >= 21) or (combom['values'] == "Май" and combod['values'] <= 21):
@@ -30,6 +30,7 @@ def horoscope():
     elif (combom['values'] == "Февраль" and combod['values'] >= 20) or (combom['values'] == "Март" and combod['values'] <= 20):
         sign = "Лев"
     lbl4["text"] = (f'По гороскопу вы {sign}')
+horoscope(sign, combom, combod)
 icon = PhotoImage(file = "stars1.png")
 window.iconphoto(False, icon)
 lbl = Label(window, text="Выберите свою дату рождения", font="Courier")
