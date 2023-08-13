@@ -360,3 +360,269 @@
 // }
 
 // Задание 16
+
+// let start = +prompt("Введите начало диапазона: ");
+// let end = +prompt("Введите конец диапазона: ");
+// for (i = start; i <= end; i++){
+//     if (i % 7 == 0){
+//         console.log(i)
+//     }
+// }
+
+// Задание 17
+
+// let start = +prompt("Введите начало диапазона: ");
+// let end = +prompt("Введите конец диапазона: ");
+// console.log("Все числа диапазона");
+// for (i = start; i <= end; i++){
+//     console.log(i)
+// }          
+// console.log("Все числа кратные 7");
+// for (i = start; i <= end; i++){
+//     if (i % 7 == 0){
+//         console.log(i)
+//     }       
+// }
+// console.log("Количество чисел кратных 5");
+// let n = 1;
+// for (i = start; i <= end; i++){
+//     if (i % 5 == 0){
+//         console.log(n);
+//         n +=1
+//     }  
+// }
+// console.log("Все числа диапазона в обратном порядке")
+// for (i = start - 1; i <= end; i++){
+//     console.log(end);
+//     end = end - 1
+// }    
+    
+// Задание 18
+
+// let start = +prompt("Введите начало диапазона: ");
+// let end = +prompt("Введите конец диапазона: ");
+// while (start < end){
+//     start++;
+//     if (start % 3 == 0 && start % 5 != 0){
+//         console.log("Fizz")
+//     }
+//     else if (start % 5 == 0 && start % 3 != 0){
+//         console.log("Buzz")
+//     }
+//     else if (start % 3 == 0 && start % 5 == 0){
+//         console.log("Fizz Buzz")
+//     }
+//     else if (start % 3 != 0 && start % 5 != 0){
+//         console.log(start)
+//     }
+// }
+    
+// Задание 18
+
+// console.log("Регистрация персонажа");
+// let reg = 0;
+// while (reg == 0){
+//     let reg_gender = 0;
+//     while (reg_gender == 0){
+//         let gender = +prompt("Выберите пол персонажа\n1 - М\n2 - Ж\n>  ");
+//         if (gender == 1){
+//             gender = "Мужской";
+//             reg_gender=1
+//         } 
+//         else if (gender == 2){
+//             gender = "Женский";
+//             reg_gender=1;
+//         }
+//         else{
+//             console.log("Ошибка: Выберите из перечисленного")
+//         }
+//         if (reg_gender == 1){
+//             let reg_race = 0;
+//             while (reg_race == 0){
+//                 let race = +prompt("Выберите рассу персонажа\n1 - Человек\n2 - Эльф\n3 - Гном\n4 - Назад\n5 - К началу\n>  ");
+//                 if (race == 1){
+//                     race = "Человек";
+//                     reg_race = 1
+//                 }  
+//                 else if (race == 2){
+//                     race = "Эльф";
+//                     reg_race = 1
+//                 }
+//                 else if (race == 3){
+//                     race = "Гном";
+//                     reg_race = 1
+//                 }
+                    
+//                 else if (race == 4){
+//                     reg_gender = 0;
+//                     break
+//                 }
+//                 else if (race == 5){
+//                     reg_gender = 0
+//                     break
+//                 }
+//                 else{
+//                     console.log("Ошибка: Выберите из перечисленного")
+//                 }
+//                 if (reg_race == 1){
+//                     reg_role = 0;
+//                     if (race == "Человек"){
+//                         while (reg_role == 0){
+//                             let role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
+//                             if (role == 1){
+//                                 role = "Мечник";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 2){
+//                                 role = "Лучник";
+//                                 reg_role = 1
+//                             }  
+//                             else if (role == 3){
+//                                 role = "Кавалерист";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 4){
+//                                 reg_race = 0
+//                                 break
+//                             }
+//                             else if (role == 5){
+//                                 reg_gender = 0;
+//                                 break
+//                             }
+//                             else{
+//                                 console.log("Ошибка: Выберите из перечисленного")
+//                             }   
+//                         }
+//                     }
+//                     else if (race == "Эльф"){
+//                         while (reg_role == 0){
+//                             let role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
+//                             if (role == 1){
+//                                 role = "Мечник";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 2){
+//                                 role = "Лучник";
+//                                 reg_role = 1
+//                             } 
+//                             else if (role == 3){
+//                                 role = "Кавалерист";
+//                                 reg_role = 1
+//                             }
+                                
+//                             else if (role == 4){
+//                                 reg_race = 0;
+//                                 break
+//                             }
+                                
+//                             else if (role == 5){
+//                                 reg_gender = 0;
+//                                 break
+//                             }
+//                             else{
+//                                 console.log("Ошибка: Выберите из перечисленного")
+//                             }
+//                         }    
+//                     }       
+//                     else if (race == "Гном"){
+//                         while (reg_role == 0){
+//                             role = +prompt("Выберите роль персонажа\n1 - Мечник\n2 - Копейщик\n3 - Арбалетчик\n4 - Назад\n5 - К началу\n>  ");
+//                             if (role == 1){
+//                                 role = "Мечник";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 2){
+//                                 role = "Копейщик";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 3){
+//                                 role = "Арбалетчик";
+//                                 reg_role = 1
+//                             }
+//                             else if (role == 4){
+//                                 reg_race = 0;
+//                                 break
+//                             }
+//                             else if (role == 5){
+//                                 reg_gender = 0
+//                                 break
+//                             }
+//                             else{
+//                                 console.log("Ошибка: Выберите из перечисленного")
+//                             }
+                                
+//                         }
+                            
+//                     }
+                        
+//                 }
+                    
+//             }
+                
+//         }
+            
+//     }
+//     let myName = prompt("Введите имя: ");
+//     let reg_name = 0;
+//     while (reg_name == 0){
+//         let info = +prompt("Вывести информацию о персонаже?\n1 - Да\n2 - Нет\n>  ");
+//         if (info == 1){
+//             console.log("Информация о персонаже: ");
+//             console.log("Имя: ",myName);
+//             console.log("Пол: ",gender);
+//             console.log("Раса: ",race);
+//             console.log("Роль: ",role);
+//             break
+//         }
+//         else if (info == 2){
+//             console.log("Персонаж не создан!");
+//             break
+//         }
+//         else{
+//             console.log("Ошибка: Выберите из перечисленного")
+//         }       
+//     }
+//     reg+=1
+// }
+
+// Задание 19
+
+let numberList = [5, 16, 7, 24, 3];
+let numberList1 = [11, 3, 52, 5, 13];
+console.log("Все элементы списков");
+let numberList2 = [...numberList, ...numberList1];
+console.log(numberList2);
+console.log("------------------------------------");
+console.log("Все элементы списков без повторений");
+console.log(new Set(numberList2));
+console.log("------------------------------------");
+console.log("Общие элементы списков");
+let numberList3 = [];
+for (i in numberList){
+    for (j in numberList1){
+        if (i == j){
+            numberList3.append(i);
+            break
+        }
+    } 
+}
+console.log(numberList3)
+console.log("------------------------------------")
+console.log("Уникальные элементы списков")
+let numberList4 = []
+for (i in numberList1){
+    if (!(i in numberList)){
+        numberList4.append(i)
+    }  
+}
+for (i in numberList){
+    if (!(i in numberList1)){
+        numberList4.append(i)
+    }
+}
+console.log(numberList4)
+console.log("------------------------------------")
+console.log("Максимальные и минимальные элементы обоих списков")
+let numberList5 = [Math.max(numberList), Math.min(numberList), Math.max(numberList1), Math.min(numberList1)]
+console.log(numberList5)
+console.log("------------------------------------")
