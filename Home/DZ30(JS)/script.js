@@ -598,10 +598,10 @@ console.log(new Set(numberList2));
 console.log("------------------------------------");
 console.log("Общие элементы списков");
 let numberList3 = [];
-for (i in numberList){
-    for (j in numberList1){
+for (i of numberList){
+    for (j of numberList1){
         if (i == j){
-            numberList3.append(i);
+            numberList3.push(i);
             break
         }
     } 
@@ -610,14 +610,14 @@ console.log(numberList3)
 console.log("------------------------------------")
 console.log("Уникальные элементы списков")
 let numberList4 = []
-for (i in numberList1){
-    if (!(i in numberList)){
-        numberList4.append(i)
+for (i of numberList1){
+    if (numberList.includes(i)){
+        numberList4.push(i)
     }  
 }
-for (i in numberList){
-    if (!(i in numberList1)){
-        numberList4.append(i)
+for (i of numberList){
+    if (numberList1.includes(i)){
+        numberList4.push(i)
     }
 }
 console.log(numberList4)
