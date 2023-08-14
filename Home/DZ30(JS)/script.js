@@ -606,23 +606,23 @@ for (i of numberList){
         }
     } 
 }
-console.log(numberList3)
-console.log("------------------------------------")
-console.log("Уникальные элементы списков")
-let numberList4 = []
+console.log(numberList3);
+console.log("------------------------------------");
+console.log("Уникальные элементы списков");
+let numberList4 = [];
 for (i of numberList1){
-    if (numberList.includes(i)){
-        numberList4.push(i)
+    if (!(i in numberList)){
+        numberList4.push(i);
     }  
 }
 for (i of numberList){
-    if (numberList1.includes(i)){
-        numberList4.push(i)
+    if (!(i in numberList1)){
+        numberList4.push(i);
     }
 }
-console.log(numberList4)
-console.log("------------------------------------")
-console.log("Максимальные и минимальные элементы обоих списков")
-let numberList5 = [Math.max(numberList), Math.min(numberList), Math.max(numberList1), Math.min(numberList1)]
-console.log(numberList5)
-console.log("------------------------------------")
+console.log(numberList4);
+console.log("------------------------------------");
+console.log("Максимальные и минимальные элементы обоих списков");
+let numberList5 = [Math.max(...numberList), Math.min(...numberList), Math.max(...numberList1), Math.min(...numberList1)];
+console.log(numberList5);
+console.log("------------------------------------");
