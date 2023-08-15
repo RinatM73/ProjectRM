@@ -496,7 +496,7 @@
 //                     }
 //                     else if (race == "Эльф"){
 //                         while (reg_role == 0){
-//                             let role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
+//                             role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
 //                             if (role == 1){
 //                                 role = "Мечник";
 //                                 reg_role = 1
@@ -587,42 +587,106 @@
 
 // Задание 19
 
-let numberList = [5, 16, 7, 24, 3];
-let numberList1 = [11, 3, 52, 5, 13];
-console.log("Все элементы списков");
-let numberList2 = [...numberList, ...numberList1];
-console.log(numberList2);
-console.log("------------------------------------");
-console.log("Все элементы списков без повторений");
-console.log(new Set(numberList2));
-console.log("------------------------------------");
-console.log("Общие элементы списков");
-let numberList3 = [];
-for (i of numberList){
-    for (j of numberList1){
-        if (i == j){
-            numberList3.push(i);
-            break
-        }
-    } 
-}
-console.log(numberList3);
-console.log("------------------------------------");
-console.log("Уникальные элементы списков");
-let numberList4 = [];
-for (i of numberList1){
-    if (!(i in numberList)){
-        numberList4.push(i);
-    }  
-}
-for (i of numberList){
-    if (!(i in numberList1)){
-        numberList4.push(i);
+// let numberList = [5, 16, 7, 24, 3];
+// let numberList1 = [11, 3, 52, 5, 13];
+
+// console.log("Все элементы списков");
+// let numberList2 = [...numberList, ...numberList1];
+// console.log(numberList2);
+// console.log("------------------------------------");
+// console.log("Все элементы списков без повторений");
+// console.log(new Set(numberList2));
+// console.log("------------------------------------");
+
+// console.log("Общие элементы списков");
+// let numberList3 = [];
+// for (i of numberList){
+//     for (j of numberList1){
+//         if (i == j){
+//             numberList3.push(i);
+//             break
+//         }
+//     } 
+// }
+// console.log(numberList3);
+// console.log("------------------------------------");
+
+// console.log("Уникальные элементы списков");
+// let numberList4 = [];
+// for (i of numberList1){
+//     if (!(i in numberList)){
+//         numberList4.push(i);
+//     }  
+// }
+// for (i of numberList){
+//     if (!(i in numberList1)){
+//         numberList4.push(i);
+//     }
+// }
+// console.log(numberList4);
+// console.log("------------------------------------");
+
+// console.log("Максимальные и минимальные элементы обоих списков");
+// let numberList5 = [Math.max(...numberList), Math.min(...numberList), Math.max(...numberList1), Math.min(...numberList1)];
+// console.log(numberList5);
+// console.log("------------------------------------");
+
+// Задание 19
+
+console.log("Регистрация гостей");
+guestList = [];
+blackList = ["Костя", "Федя", "Петя"];
+while (True){
+    if (length(guestList) <= 5){
+        let vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
     }
+        
+    else{
+        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
+    }
+        
+    if (vybor == 1){
+        if (length(guestList) < 10){
+            let guest_name = prompt("Введите имя: ");
+            if (!(guest_name in blackList)){
+                guestList.push(guest_name);
+            }
+            else{
+                console.log("Данный гость в черном списке!");
+            }
+        }
+        else{
+            console.log("Список гостей заполнен!");
+        }
+    }
+        
+    else if vybor == 2{
+        if (length(guestList) > 0){
+            guest_name = prompt("Введите имя: ");
+            guestList.remove(guest_name);
+        }
+            
+        else{
+            console.log("Список пуст!");
+        }
+            
+    }
+        
+    else if (vybor == 3){
+        if (length(guestList) > 0){
+            textGuest = "";
+            console.log("Список гостей: ");
+            for i in range(0,len(guestList))
+                textGuest += f"{i + 1} - {guestList[i]}\n" 
+            print(textGuest)
+        }
+            
+        else:
+            print("Список пуст!")
+    }
+        
+    elif vybor == "4":
+        if 5 < len(guestList) < 10: 
+            break
 }
-console.log(numberList4);
-console.log("------------------------------------");
-console.log("Максимальные и минимальные элементы обоих списков");
-let numberList5 = [Math.max(...numberList), Math.min(...numberList), Math.max(...numberList1), Math.min(...numberList1)];
-console.log(numberList5);
-console.log("------------------------------------");
+    
