@@ -421,10 +421,13 @@
 
 // console.log("Регистрация персонажа");
 // let reg = 0;
+// let gender = "";
+// let role = "";
+// let race = "";
 // while (reg == 0){
 //     let reg_gender = 0;
 //     while (reg_gender == 0){
-//         let gender = +prompt("Выберите пол персонажа\n1 - М\n2 - Ж\n>  ");
+//         gender = +prompt("Выберите пол персонажа\n1 - М\n2 - Ж\n>  ");
 //         if (gender == 1){
 //             gender = "Мужской";
 //             reg_gender=1
@@ -439,7 +442,7 @@
 //         if (reg_gender == 1){
 //             let reg_race = 0;
 //             while (reg_race == 0){
-//                 let race = +prompt("Выберите рассу персонажа\n1 - Человек\n2 - Эльф\n3 - Гном\n4 - Назад\n5 - К началу\n>  ");
+//                 race = +prompt("Выберите рассу персонажа\n1 - Человек\n2 - Эльф\n3 - Гном\n4 - Назад\n5 - К началу\n>  ");
 //                 if (race == 1){
 //                     race = "Человек";
 //                     reg_race = 1
@@ -468,7 +471,7 @@
 //                     reg_role = 0;
 //                     if (race == "Человек"){
 //                         while (reg_role == 0){
-//                             let role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
+//                             role = +prompt("Выберите роль пресонажа\n1 - Мечник\n2 - Лучник\n3 - Кавалерист\n4 - Назад\n5 - К началу\n>  ");
 //                             if (role == 1){
 //                                 role = "Мечник";
 //                                 reg_role = 1
@@ -633,60 +636,61 @@
 
 // Задание 19
 
-console.log("Регистрация гостей");
-guestList = [];
-blackList = ["Костя", "Федя", "Петя"];
-while (True){
-    if (length(guestList) <= 5){
-        let vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
-    }
+// console.log("Регистрация гостей");
+// guestList = [];
+// blackList = ["Костя", "Федя", "Петя"];
+// let vybor = ""
+// while (true){
+//     if (guestList.length <= 5){
+//         vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
+//     } 
+//     else{
+//         vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
+//     }
         
-    else{
-        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
-    }
+//     if (vybor == 1){
+//         if (guestList.length < 10){
+//             let guest_name = prompt("Введите имя: ");
+//             if (!(guest_name in blackList)){
+//                 guestList.push(guest_name);
+//             }
+//             else{
+//                 console.log("Данный гость в черном списке!");
+//             }
+//         }
+//         else{
+//             console.log("Список гостей заполнен!");
+//         }
+//     }
         
-    if (vybor == 1){
-        if (length(guestList) < 10){
-            let guest_name = prompt("Введите имя: ");
-            if (!(guest_name in blackList)){
-                guestList.push(guest_name);
-            }
-            else{
-                console.log("Данный гость в черном списке!");
-            }
-        }
-        else{
-            console.log("Список гостей заполнен!");
-        }
-    }
-        
-    else if vybor == 2{
-        if (length(guestList) > 0){
-            guest_name = prompt("Введите имя: ");
-            guestList.remove(guest_name);
-        }
-            
-        else{
-            console.log("Список пуст!");
-        }
-            
-    }
-        
-    else if (vybor == 3){
-        if (length(guestList) > 0){
-            textGuest = "";
-            console.log("Список гостей: ");
-            for i in range(0,len(guestList))
-                textGuest += f"{i + 1} - {guestList[i]}\n" 
-            print(textGuest)
-        }
-            
-        else:
-            print("Список пуст!")
-    }
-        
-    elif vybor == "4":
-        if 5 < len(guestList) < 10: 
-            break
-}
+//     else if (vybor == 2){
+//         if (guestList.length > 0){
+//             guest_name = prompt("Введите имя гостя: ");
+//             guestList = guestList.filter(item => item !== guest_name);
+//         }
+
+//         else{
+//             console.log("Список пуст!");
+//         }
+//     }
+//     else if (vybor == 3){
+//         if (guestList.length > 0){
+//             textGuest = "";
+//             console.log("Список гостей: ");
+//             for (i = 0; i <= guestList.length; i++){
+//                 textGuest += `${i + 1} - ${guestList[i]}\n`
+//             }  
+//             console.log(textGuest)
+//         }
+//         else{
+//             console.log("Список пуст!")
+//         }
+//     }  
+//     else if (vybor == 4){
+//         if (5 < guestList.length && guestList.length < 10){
+//             break
+//         }   
+//     }
+// }
     
+// Задание 20
