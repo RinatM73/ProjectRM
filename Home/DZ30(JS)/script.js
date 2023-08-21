@@ -637,9 +637,9 @@
 // Задание 19
 
 // console.log("Регистрация гостей");
-// guestList = [];
-// blackList = ["Костя", "Федя", "Петя"];
-// let vybor = ""
+// let guestList = [];
+// let blackList = ["Костя", "Федя", "Петя"];
+// let vybor = "";
 // while (true){
 //     if (guestList.length <= 5){
 //         vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
@@ -694,3 +694,80 @@
 // }
     
 // Задание 20
+
+console.log("Регистрация гостей");
+guestList = [];
+let vybor = "";
+while (true){
+    if (guestList.length <= 5){
+        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
+    } 
+    else{
+        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
+    }
+    if (vybor == 1){
+        if (guestList.length < 10){
+            let guestName = prompt("Введите имя гостя: ");
+            let guestAge = +prompt("Введите возраст гостя: ");
+            let infoGuest = {
+                "guestName" : guestName,
+                "guestAge" : guestAge,
+            }
+            if (guestAge <= 10){
+                console.log("Нельзя приглашать гостей младше 10 лет включительно!\n")
+            }
+                
+            else{
+                guestList.push(infoGuest);
+                console.log("Гость добавлен\n")
+            }
+        }
+        else{
+            console.log("Список гостей заполнен!")
+        }  
+    }
+    else if (vybor == 2){
+        if (guestList.length > 0){
+            guestName = prompt("Введите имя гостя: ");
+            guestAge = +prompt("Введите возраст гостя: ");
+            guestList = guestList.filter(item => item !== guest_name);
+            ("Гость удален\n")
+        }
+        else{
+            ("Список пуст!")
+        }
+    }
+    else if (vybor == 3){
+        if (guestList.length > 0){
+            textGuest = "";
+            textGuest1 = "";
+            console.log("Список гостей: ");
+            n = 0;
+            for (i = 0; i <= guestList.length; i++){
+                 textGuest += `${i + 1} - ${guestList[i]['guestName']}\n`
+                if (guestList[i]['guestAge'] >= 18){
+                    n = n + 1;
+                    textGuest += `${n} - Имя: ${guestList[i]['guestName']}\n    Возраст: ${guestList[i]['guestAge']}\n`
+                }
+            }
+            console.log("Взрослые:\n");
+            (textGuest);
+            for (i = 0; i <= guestList.length; i++){
+                if (guestList[i]['guestAge'] < 18){
+                    n = n + 1;
+                    textGuest1 += `${n} - Имя: ${guestList[i]['guestName']}\n    Возраст: ${guestList[i]['guestAge']}\n` 
+                }
+            }
+            console.log("Дети:\n");
+            console.log(textGuest1);
+        } 
+        else{
+            console.log("Список пуст!")
+        }
+    }
+    else if (vybor == 4){
+        if (5 < guestList.length < 10){
+            break
+        }   
+    }     
+}
