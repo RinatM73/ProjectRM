@@ -695,79 +695,406 @@
     
 // Задание 20
 
-console.log("Регистрация гостей");
-guestList = [];
-let vybor = "";
-while (true){
-    if (guestList.length <= 5){
-        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
-    } 
-    else{
-        vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
-    }
-    if (vybor == 1){
-        if (guestList.length < 10){
-            let guestName = prompt("Введите имя гостя: ");
-            let guestAge = +prompt("Введите возраст гостя: ");
-            let infoGuest = {
-                "guestName" : guestName,
-                "guestAge" : guestAge,
-            }
-            if (guestAge <= 10){
-                console.log("Нельзя приглашать гостей младше 10 лет включительно!\n")
-            }
+// console.log("Регистрация гостей");
+// guestList = [];
+// let vybor = "";
+// while (true){
+//     if (guestList.length <= 5){
+//         vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n> ");
+//     } 
+//     else{
+//         vybor = +prompt("Выберите действие\n1 - Добавить гостя\n2 - Удалить гостя\n3 - Просмотреть список гостей\n4 - Закончить приглашение?\n> ");
+//     }
+//     if (vybor == 1){
+//         if (guestList.length < 10){
+//             let guestName = prompt("Введите имя гостя: ");
+//             let guestAge = +prompt("Введите возраст гостя: ");
+//             let infoGuest = {
+//                 "guestName" : guestName,
+//                 "guestAge" : guestAge,
+//             }
+//             if (guestAge <= 10){
+//                 console.log("Нельзя приглашать гостей младше 10 лет включительно!\n")
+//             }
                 
-            else{
-                guestList.push(infoGuest);
-                console.log("Гость добавлен\n")
-            }
-        }
-        else{
-            console.log("Список гостей заполнен!")
-        }  
-    }
-    else if (vybor == 2){
-        if (guestList.length > 0){
-            guestName = prompt("Введите имя гостя: ");
-            guestAge = +prompt("Введите возраст гостя: ");
-            guestList = guestList.filter(item => item !== guest_name);
-            ("Гость удален\n")
-        }
-        else{
-            ("Список пуст!")
-        }
-    }
-    else if (vybor == 3){
-        if (guestList.length > 0){
-            textGuest = "";
-            textGuest1 = "";
-            console.log("Список гостей: ");
-            n = 0;
-            for (i = 0; i <= guestList.length; i++){
-                 textGuest += `${i + 1} - ${guestList[i]['guestName']}\n`
-                if (guestList[i]['guestAge'] >= 18){
-                    n = n + 1;
-                    textGuest += `${n} - Имя: ${guestList[i]['guestName']}\n    Возраст: ${guestList[i]['guestAge']}\n`
-                }
-            }
-            console.log("Взрослые:\n");
-            (textGuest);
-            for (i = 0; i <= guestList.length; i++){
-                if (guestList[i]['guestAge'] < 18){
-                    n = n + 1;
-                    textGuest1 += `${n} - Имя: ${guestList[i]['guestName']}\n    Возраст: ${guestList[i]['guestAge']}\n` 
-                }
-            }
-            console.log("Дети:\n");
-            console.log(textGuest1);
-        } 
-        else{
-            console.log("Список пуст!")
-        }
-    }
-    else if (vybor == 4){
-        if (5 < guestList.length < 10){
-            break
-        }   
-    }     
-}
+//             else{
+//                 guestList.push(infoGuest);
+//                 console.log("Гость добавлен\n")
+//             }
+//         }
+//         else{
+//             console.log("Список гостей заполнен!")
+//         }  
+//     }
+//     else if (vybor == 2){
+//         if (guestList.length > 0){
+//             guestName = prompt("Введите имя гостя: ");
+//             guestAge = +prompt("Введите возраст гостя: ");
+//             guestList = guestList.filter(item => item !== guest_name);
+//             ("Гость удален\n")
+//         }
+//         else{
+//             ("Список пуст!")
+//         }
+//     }
+//     else if (vybor == 3){
+//         if (guestList.length > 0){
+//             let textGuest = "";
+//             let textGuest1 = "";
+//             console.log("Список гостей: ");
+//             let n = 0;
+//             for (i = 0; i <= guestList.length; i++){
+//                  textGuest += `${i + 1} - ${guestList[i].guestName}\n`
+//                 if (guestList[i].guestAge >= 18){
+//                     n = n + 1;
+//                     textGuest += `${n} - Имя: ${guestList[i].guestName}\n    Возраст: ${guestList[i].guestAge}\n`
+//                 }
+//             }
+//             console.log("Взрослые:\n");
+//             console.log(textGuest);
+//             for (i = 0; i <= guestList.length; i++){
+//                 if (guestList[i].guestAge < 18){
+//                     n = n + 1;
+//                     textGuest1 += `${n} - Имя: ${guestList[i].guestName}\n    Возраст: ${guestList[i].guestAge}\n` 
+//                 }
+//             }
+//             console.log("Дети:\n");
+//             console.log(textGuest1);
+//         } 
+//         else{
+//             console.log("Список пуст!")
+//         }
+//     }
+//     else if (vybor == 4){
+//         if (5 < guestList.length < 10){
+//             break
+//         }   
+//     }     
+// }
+
+// Задание 21
+
+// let myName = prompt("Введите ваше имя: ")
+// let mySurname = prompt("Введите вашу фамилию: ")
+// let myAge = prompt("Введите ваш возраст: ")
+// myByear = prompt("Введите ваш год рождения: ")
+// console.log(`Карточка пользователя:\nИмя:  ${myName}\nФамилия:  ${mySurname}\nВозраст:  ${myAge}\nГод рождения:  ${myByear}`)
+
+// Задание 22
+
+// let vybor = +prompt("Выберите загадку(1, 2 или 3): ");
+// if (vybor == 1){
+//     console.log("Кто его раздевает, тот слезы проливает. Что это?")
+//     let otvet = prompt("Введите ответ: ");
+//     if (otvet == "Лук"){
+//         console.log("Верно!")
+//     }
+//     else{
+//         console.log("Не верно!")
+//     }
+// }
+// else if (vybor == 2){
+//     console.log("Зимой и летом одним цветом. Что это?");
+//     otvet = prompt("Введите ответ: ");
+//     if (otvet == "Елка"){
+//         console.log("Верно!")
+//     }
+//     else{
+//         console.log("Не верно!")
+//     }
+// }
+// else if (vybor == 3){
+//     console.log("Два конца, два кольца, посередине гвоздик. Что это?");
+//     otvet = prompt("Введите ответ: ");
+//     if (otvet == "Ножницы");
+//         console.log("Верно!")
+//     else{
+//         console.log("Не верно!")
+//     }
+// }  
+// else{
+//     console.log("Ошибка выбора!")
+// }
+    
+
+// Задание 23
+
+// let uch = Math.floor(Math.random() * 11);
+// let popytka = 1;
+// let vybnum = +prompt("Введите число от 0 до 10\n>");
+// popytka += 1;
+// while (vybnum != uch){
+//     vybnum = +prompt("Повторите попытку\n>");
+//     if (uch < vybnum){
+//         console.log("Ваше число больше!");
+//         popytka += 1
+//     }
+        
+//     else if (uch > vybnum){
+//         console.log("Ваше число меньше!");
+//         popytka += 1
+//     }
+//     else{
+//         console.log(`Вы угадали, это число ${uch}!\nВы использовали ${popytka} попыток `);
+//         popytka += 1;
+//         break
+//     }
+        
+// }
+    
+
+// Задание 24 
+
+// let weekList = [
+//     {
+//         "weekday" : "Понедельник",
+//         "lesson1" : "Математика",
+//         "lesson2" : "Физика",
+//         "lesson3" : "Информатика",
+//         "lesson4" : "Физкультура",
+//         "vyhodnoy" : "",
+
+//     },
+//     {
+//         "weekday" : "Вторник",
+//         "lesson1" : "Математика",
+//         "lesson2" : "Физика",
+//         "lesson3" : "Информатика",
+//         "lesson4" : "",
+//         "vyhodnoy" : "",
+//     },
+//     {
+//         "weekday" : "Среда",
+//         "lesson1" : "Литература",
+//         "lesson2" : "Физика",
+//         "lesson3" : "",
+//         "lesson4" : "",
+//         "vyhodnoy" : "",
+//     },
+//     {
+//         "weekday" : "Четверг",
+//         "lesson1" : "Литература",
+//         "lesson2" : "Физика",
+//         "lesson3" : "Информатика",
+//         "lesson4" : "Черчение",
+//         "vyhodnoy" : "",
+//     },
+//     {
+//         "weekday" : "Пятница",
+//         "lesson1" : "Литература",
+//         "lesson2" : "Физика",
+//         "lesson3" : "Ин. язык",
+//         "lesson4" : "",
+//         "vyhodnoy" : "",
+//     },
+//     {
+//         "weekday" : "Суббота",
+//         "lesson1" : "",
+//         "lesson2" : "",
+//         "lesson3" : "",
+//         "lesson4" : "",
+//         "vyhodnoy" : "Выходной",
+//     },
+//     {
+//         "weekday" : "Воскресение",
+//         "lesson1" : "",
+//         "lesson2" : "",
+//         "lesson3" : "",
+//         "lesson4" : "",
+//         "vyhodnoy" : "Выходной",
+//     },    
+// ]
+// for (i = 0; i <= weekList.length; i++){
+//     if (weekList[i]["weekday"] == "Понедельник" || weekList[i]["weekday"] == "Четверг"){
+//         console.log(`День недели - ${weekList[i]['weekday']}`);
+//         console.log(`1 - ${weekList[i]['lesson1']}  8.00 - 10.15`);
+//         console.log(`2 - ${weekList[i]['lesson2']}  10.20 - 11.25`);
+//         console.log(`3 - ${weekList[i]['lesson3']}  11.30 - 12.25`);
+//         console.log(`4 - ${weekList[i]['lesson4']}  13.00 - 14.00\n`);
+//     } 
+//     else if (weekList[i]["weekday"] == "Вторник" || weekList[i]["weekday"] == "Пятница"){
+//         console.log(`День недели - ${weekList[i]['weekday']}`);
+//         console.log(`1 - ${weekList[i]['lesson1']}  8.00 - 10.15`);
+//         console.log(`2 - ${weekList[i]['lesson2']}  10.20 - 11.25`);
+//         console.log(`3 - ${weekList[i]['lesson3']}  11.30 - 12.25\n`);
+//     }
+        
+//     else if (weekList[i]["weekday"] == "Среда"){
+//         console.log(`День недели - ${weekList[i]['weekday']}`);
+//         console.log(`1 - ${weekList[i]['lesson1']}  8.00 - 10.15`);
+//         console.log(`2 - ${weekList[i]['lesson2']}  10.20 - 11.25\n`);
+//     }
+        
+//     else{
+//         console.log(`День недели - ${weekList[i]['weekday']}`);
+//         console.log(`${weekList[i]['vyhodnoy']}\n`)
+//     }
+// }
+
+// Задание 25
+    
+// let regList = [];
+// while (true){
+//     let vybor = +prompt("Выберите действие\n1 - Регистрация\n2 - Вход\n");
+//     if (vybor == 1){
+//         console.log("Регистрация");
+//         while (true){
+//             let inforeg = {
+//                 "namePerson" : "",
+//                 "surnamePerson" : "",
+//                 "loginPerson" : "",
+//                 "passwordPerson" : "",
+//                 }
+//                 while (true){
+//                     let myLogin = prompt("Введите логин: ");
+//                     if (regList.length > 0){
+//                         for (i = 0; i <= regList.length; i++){
+//                             if (myLogin != regList[i]["loginPerson"]){
+//                                 inforeg["loginPerson"] = myLogin
+//                             }
+//                             else if (regList.length - 1 == i){
+//                                 console.log("Логин занят, введите другой!");
+//                                 inforeg["loginPerson"] = "";
+//                                 break
+//                             }   
+//                         }
+//                     }
+//                     else{
+//                         inforeg["loginPerson"] = myLogin;
+//                     }
+//                     if (inforeg["loginPerson"].length > 0){
+//                         break
+//                     }   
+//                 }
+//                 inforeg["passwordPerson"] = prompt("Введите пароль: ");
+//                 inforeg["namePerson"] = prompt("Введите имя: ");
+//                 inforeg["surnamePerson"] = prompt("Введите фамилию: ");
+                
+//                 let p = +prompt("Подтвердить регистрацию?\n1 - Да\n2 - Отмена\n");
+//                 if (p == 1){
+//                     ("Вы зарегестрированы!");
+//                     regList.push(inforeg);
+//                     break  
+//                 }
+//                 else if (p == 2){
+//                     console.log("Регистрация")
+//                 }   
+//         } 
+//     }
+//     else if (vybor == 2){
+//         console.log("Вход");
+//         myLogin = prompt("Введите логин: ");
+//         let myPassword = prompt("Введите пароль: ");
+//         for (i = 0; i <= regList.length; i++){
+//             if (myLogin == regList[i]["loginPerson"] && myPassword == regList[i]["passwordPerson"]){
+//                 console.log("Вход совершен успешно!");
+//                 while (true){
+//                     let vybor1 = +prompt("Выберите действие\n1 - Просмотр информации\n2 - Выйти\n3 - Редактировать данные\n");
+//                     if (vybor1 == 1){
+//                         console.log(`Имя - ${regList[i]['namePerson']}`);
+//                         console.log(`Фамилия - ${regList[i]['surnamePerson']}`);
+//                         (`Логин - ${regList[i]['loginPerson']}`)
+//                     }
+                            
+//                     else if (vybor1 == 2){
+//                         break
+//                     }
+//                     else if (vybor1 == 3){
+//                         console.log("Редактирование данных");
+//                         let reduct = +prompt("1 - Имя\n2 - Фамилия\n3 - Пароль\n");
+//                         if (reduct == 1){
+//                             console.log(`Ваше имя ${regList[i]['namePerson']}`);
+//                             regList[i]["namePerson"] = prompt("Введите новое имя: ")
+//                         }
+//                         else if (reduct == 2){
+//                             console.log(`Ваша фамилия ${regList[i]['surnamePerson']}`);
+//                             regList[i]["surnamePerson"] = prompt("Введите новую фамилию: ")
+//                         }
+                            
+//                         else if (reduct == 3){
+//                             console.log(`Ваш пароль ${regList[i]['passwordPerson']}`);
+//                             regList[i]["passwordPerson"] = prompt("Введите новый пароль: ")
+//                         }   
+//                     }  
+//                 }
+//                 break
+//             }
+//             else if (userList.length - 1 == i){
+//                 console.log("Неверный логин или пароль")
+//             }   
+//         }    
+//     } 
+// }
+    
+// Задание 26
+
+// let numberList = [1,2,3,4,5,6,7,8,9,22,11,10,6,5,22];
+
+// function delNumber(massiv){
+//     console.log("вошел", massiv, "кол-во",massiv.length);
+//     for (i = 0; i <= massiv.length; i++){
+//         if (i == massiv.length){
+//             return massiv
+//         } 
+            
+//         else if (massiv[i] % 2 == 0){
+//             massiv.pop(i);
+//             console.log("вышел", massiv);
+//             delNumber(massiv)
+//         }    
+//     } 
+// }
+// delNumber(numberList)
+
+// Задание 27
+
+// let clientList = [
+//     {
+//         "myName" : "Александр",
+//         "status" : "Оплачен"
+//     },
+//     {
+//         "myName" : "Василий",
+//         "status" : "Не оплачен"
+//     },
+//     {
+//         "myName" : "Петр",
+//         "status" : "Оплачен"
+//     },
+//     {
+//         "myName" : "Арсений",
+//         "status" : "Не оплачен"
+//     },
+//     {
+//         "myName" : "Вадим",
+//         "status" : "Оплачен"
+//     },
+//     {
+//         "myName" : "Сергей",
+//         "status" : "Не оплачен"
+//     },
+// ];
+
+// function neopl(massiv){
+//     console.log("Список");
+//     console.log("Количество: ", massiv.length);
+//     for (i = 0; i <= massiv.length; i++){
+//         console.log(`Имя: ${clientList[i]["myName"]} | Статус: ${clientList[i]["status"]}`)
+//     }
+//     for (i = 0; i <= massiv.length; i++){
+//         if (i == massiv.length){
+//             return massiv
+//         }
+//         else if (clientList[i]["status"] == "Не оплачен"){
+//             massiv.pop(i);
+//             console.log("Список обновлен");
+//             console.log("Количество: ", massiv.length);
+//             for (i = 0; i <= massiv.length; i++){
+//                 console.log(`Имя: ${clientList[i]['myName']} | Статус: ${clientList[i]['status']}`)
+//             }  
+//             console.log("---------------------------------");
+//             neopl(massiv)
+//         }   
+//     }   
+// } 
+// neopl(clientList)
