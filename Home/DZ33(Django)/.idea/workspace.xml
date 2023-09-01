@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0199d301-c536-4369-b246-f8f5f95a346f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DZ33(Django).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DZ33(Django).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/home/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quest/templates/quest/quest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/Pythonproject3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/templates/home/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/home/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/my_project/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/my_project/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/my_project/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/my_project/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/my_project/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/templates/quest/quest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonproject3/quest/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject2/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject2/.idea/misc.xml" beforeDir="false" />
@@ -80,6 +55,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -93,6 +76,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -108,5 +93,16 @@
       <updated>1693596685107</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/my_project/urls.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
