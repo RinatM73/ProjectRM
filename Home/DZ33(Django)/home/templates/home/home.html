@@ -5,6 +5,25 @@
     <title>Home</title>
 </head>
 <body>
-    Home
+    <h1>Регистрация пользователя</h1>
+    <form action="{% url 'quest' %}">
+        <label>Ссылка на ваше фото(из соцсети):</label><br><br>
+        <input type="text" name="image_1" ><br><br>
+        <label>Имя:</label><br><br>
+        <input type="text" name="my_name"><br><br>
+        <label>Фамилия:</label><br><br>
+        <input type="text" name="my_secname"><br><br>
+        <label>Дата рождения:</label><br><br>
+        <input type="text" name="my_birthday"><br><br>
+        <label>Ваши навыки:</label><br><br>
+        <input type="text" name="my_skills1"><br><br>
+        <input type="text" name="my_skills2"><br><br>
+        <input type="text" name="my_skills3"><br><br>
+        <input type="text" name="my_skills4"><br><br>
+        <input type="text" name="my_skills5"><br><br>
+        <label>Расскажите о себе:</label><br><br>
+        <input type="text" name="about_me"><br><br>
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>

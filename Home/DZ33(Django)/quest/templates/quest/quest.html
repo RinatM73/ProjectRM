@@ -5,6 +5,14 @@
     <title>Quest</title>
 </head>
 <body>
-    quest
+    <h1>Анкета пользователя</h1>
+    <img src="{{ image_1 }}" alt="" width="100" height="100"><br>
+    <span>Имя: {{ my_name }}</span><br>
+    <span>Фамилия: {{ my_secname }}</span><br>
+    <span>Дата рождения {{ my_byrthday }}:</span><br>
+    <span>Навыки: <br>{{ my_skills1 }} <br> {{ my_skills2 }} <br> {{ my_skills3 }}<br> {{ my_skills4 }} <br> {{ my_skills5 }}</span><br>
+    <span>О себе: <br> {{ about_me}}</span><br>
+    <a href="{% url 'home' %}">Закрыть</a>
+
 </body>
 </html>
