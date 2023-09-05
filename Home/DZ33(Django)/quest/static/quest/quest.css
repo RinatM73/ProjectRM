@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+main {
+    border-radius: 60px;
+    margin: 80px 250px;
+    padding: 20px 50px;
+    height: 834px;
+    width: 829px;
+    background-color: #ff7b00;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.questionnaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.btn {
+    height: 50px;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 270px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+img {
+    border-radius: 20px;
+}

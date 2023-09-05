@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
 </head>
 <body>
-    <h1>Регистрация пользователя</h1>
-    <form action="{% url 'quest' %}">
-        <label>Ссылка на ваше фото(из соцсети):</label><br><br>
-        <input type="text" name="image_1" ><br><br>
-        <label>Имя:</label><br><br>
-        <input type="text" name="my_name"><br><br>
-        <label>Фамилия:</label><br><br>
-        <input type="text" name="my_secname"><br><br>
-        <label>Дата рождения:</label><br><br>
-        <input type="text" name="my_birthday"><br><br>
-        <label>Ваши навыки:</label><br><br>
-        <input type="text" name="my_skills1"><br><br>
-        <input type="text" name="my_skills2"><br><br>
-        <input type="text" name="my_skills3"><br><br>
-        <input type="text" name="my_skills4"><br><br>
-        <input type="text" name="my_skills5"><br><br>
-        <label>Расскажите о себе:</label><br><br>
-        <input type="text" name="about_me"><br><br>
-        <button type="submit">Отправить</button>
-    </form>
+    <main>
+        <h1>Регистрация пользователя</h1>
+        <form action="{% url 'quest' %}">
+            <div class="r">
+                <ul class="reg">
+                    <li>
+                        <label>Ссылка на ваше фото(из соцсети):</label>
+                        <textarea type="text" name="image_1">https://avatars.mds.yandex.net/i?id=a89ef29a14c89858478363fe460a5e00e061f90d-9181326-images-thumbs&n=13</textarea>
+                    </li>
+                    <li>
+                        <label>Имя:</label>
+                        <textarea type="text" name="my_name">Стивен</textarea>
+                    </li>
+                    <li>
+                        <label>Фамилия:</label>
+                        <textarea type="text" name="my_secname">Стрендж</textarea>
+                    </li>
+                    <li>
+                        <label>Дата рождения:</label>
+
+                        <input type="date" name="my_birthday">
+                    </li>
+                    <li>
+                        <label>Ваши навыки:</label>
+                        <textarea type="text" name="my_skills1">Астральное проектирование</textarea>
+                        <textarea type="text" name="my_skills2">Телепатия</textarea>
+                        <textarea type="text" name="my_skills3">Гипноз</textarea>
+                        <textarea type="text" name="my_skills4">Иллюзионист</textarea>
+                        <textarea type="text" name="my_skills5">Бессмертие</textarea>
+                    </li>
+                </ul>
+                <ul class="about_me">
+                    <li>
+                        <label>Расскажите о себе:</label>
+                        <textarea class="about_me" type="text" name="about_me">Признанный во всем мире как один из самых блестящих нейрохирургов, высокомерие Стивена Стрэнджа и его эгоцентричный характер росли вместе с его мастерством, пока его эго не перевесило его карьеру, и он стал закрываться только от самых богатых и влиятельных пациентов. Все изменилось для этого человека в одну роковую ночь, когда в результате почти смертельной автокатастрофы Стрэндж получил серьезные повреждения нервов обеих рук и диагноз "больше никогда не сможет оперировать".Зная, что он полагается на свои медицинские способности для поддержания своего богатого образа жизни, Стрэндж начал искать источник исцеления для своих рук, пока поиски не истощили его ресурсы, и он столкнулся с темным и неопределенным будущим. Вычеркнув из своего списка все известные лекарства, он последовал путем слухов и легенд в Тибет в поисках более эзотерического убежища.</textarea>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </main>
 </body>
 </html>

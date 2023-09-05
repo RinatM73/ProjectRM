@@ -12,7 +12,7 @@ def quest(request):
     my_skills5 = request.GET.get('my_skills5')
     about_me = request.GET.get('about_me')
 
-    data = {'image_1':image_1,
+    datas = {'image_1':image_1,
             'my_name':my_name,
             'my_secname':my_secname,
             'my_birthday':my_birthday,
@@ -23,4 +23,4 @@ def quest(request):
             'my_skills5':my_skills5,
             'about_me':about_me}
 
-    return render(request, 'quest/quest.html', context=data)
+    return render(request, 'quest/quest.html', { 'data':datas, 'my_birthday':my_birthday })
