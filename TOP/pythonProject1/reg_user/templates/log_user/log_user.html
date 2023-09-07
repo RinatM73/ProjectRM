@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'log_user/style/style.css' %}">
+</head>
+<body>
+    <main>
+        <h1>Регистрация пользователя</h1>
+        <form action="">
+            <div class="r">
+                <ul class="reg">
+                    <li>
+                        <label>Логин: </label>
+                        <textarea type="text" name="login"></textarea>
+                    </li>
+                    <li>
+                        <label>Пароль: </label>
+                        <textarea type="text" name="password"></textarea>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </main>
+
+</body>
+</html>
