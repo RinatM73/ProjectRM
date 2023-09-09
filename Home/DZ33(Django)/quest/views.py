@@ -22,5 +22,4 @@ def quest(request):
             'my_skills4':my_skills4,
             'my_skills5':my_skills5,
             'about_me':about_me}
-
-    return render(request, 'quest/quest.html', { 'data':datas, 'my_birthday':my_birthday })
+    return render(request, 'quest/quest.html', context=datas)
