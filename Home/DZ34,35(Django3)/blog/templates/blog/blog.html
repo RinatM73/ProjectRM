@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/style/style.css' %}">
+</head>
+<body>
+    {% for article in articles %}
+        <div class="card-blog">
+            <h3>{{ article.title }}</h3>
+            <img src="{{ article.image.url }}" height="400" width="600" alt=""><br>
+            <span>{{ article.date_time }}</span><br>
+            <a href="{% url 'blog:article' article.id %}">Подробнее</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
