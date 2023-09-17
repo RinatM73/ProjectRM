@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0199d301-c536-4369-b246-f8f5f95a346f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/DZ33(Django).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/static/home/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/templates/home/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/home/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/my_project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/my_project/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/my_project/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/my_project/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/my_project/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/static/quest/quest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/templates/quest/quest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ33(Django)/quest/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/static/date_time/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/static/date_time/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/templates/date_time/date_time.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/templates/date_time/date_time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/date_time/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/home/static/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/home/static/home/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/home/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/home/templates/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/multip_table/templates/multip_table/multip_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/multip_table/templates/multip_table/multip_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/multip_table/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/multip_table/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/prog_day/templates/prog_day/prog_day.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/prog_day/templates/prog_day/prog_day.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ36,38(Django4)/prog_day/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ36,38(Django4)/prog_day/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/pythonProject1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/static/home/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/templates/home/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/home/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/index/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/media/blog/image/ArcheAge_sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/media/blog/image/Warface_sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/media/blog/image/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/mysite/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/mysite/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/mysite/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/mysite/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/mysite/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/portfolio/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/0002_alter_article_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/0003_alter_article_desc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/0004_alter_article_date_alter_article_desc_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/0005_alter_article_url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/static/blog/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/templates/blog/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/templates/detail/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/templates/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/static/log_user/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/static/reg_user/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/templates/log_user/log_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/templates/reg_user/reg_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/reg_user/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject1/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOP/pythonProject2/ProjectRM" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2UoCk36Vys0xLrDoSdbdzWTSGvD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0199d301-c536-4369-b246-f8f5f95a346f" name="Changes" comment="" />
+      <created>1693596685107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693596685107</updated>
+    </task>
+    <servers />
+  </component>
+</project>

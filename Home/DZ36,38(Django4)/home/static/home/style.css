@@ -1,0 +1,18 @@
+body {
+    background: #5CDB95;
+    display: flex;
+    justify-content: center;
+    
+     
+}
+
+button {
+    margin-top: 150px;
+    height: 60px;
+    width: 500px;
+    background: #05386B;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: #5CDB95;
+}

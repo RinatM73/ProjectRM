@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Prog_day</title>
+    <link rel="stylesheet" href="{% static 'prog_day/style.css' %}">
 </head>
 <body>
-$END$
+    <main>
+        <h1>День программиста в текущем году</h1>
+        <p>{{ prog_day }}</p>
+        <form action="{% url 'home' %}">
+            <button type="submit" class="btn3">Назад</button>
+        </form>
+    </main>
 </body>
 </html>

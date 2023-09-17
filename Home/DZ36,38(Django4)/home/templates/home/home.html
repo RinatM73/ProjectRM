@@ -1,10 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
 </head>
 <body>
-$END$
+    <main>
+        <form action="{% url 'date_time' %}">
+            <button type="submit" class="btn">Текущие дата и время</button>
+        </form>
+        <form action="{% url 'multip_table' %}">
+            <button type="submit" class="btn1">Таблица умножения</button>
+        </form>
+        <form action="{% url 'prog_day' %}">
+            <button type="submit" class="btn2">День программиста в текущем году</button>
+        </form>
+    </main>
+
 </body>
 </html>

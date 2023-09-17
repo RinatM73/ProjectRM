@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
+{% load tz %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Date_time</title>
+    <link rel="stylesheet" href="{% static 'date_time/style.css' %}">
 </head>
 <body>
-$END$
+    <main>
+        <h1>Текущие дата и время</h1>
+        <p>{% now "d-m-Y G:i:s" %}</p>
+        <form action="{% url 'home' %}">
+            <button type="submit" class="btn3">Назад</button>
+        </form>
+    </main>
 </body>
 </html>

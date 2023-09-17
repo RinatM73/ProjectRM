@@ -1,10 +1,69 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Multip_table</title>
+    <link rel="stylesheet" href="{% static 'multip_table/style.css' %}">
 </head>
 <body>
-$END$
+    <main>
+        <h1>Таблица умножения</h1>
+        <ul>
+            <li>
+                {% for i in list %}
+                <p>1 x {{i}} = {% widthratio 1 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>2 x {{i}} = {% widthratio 2 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>3 x {{i}} = {% widthratio 3 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>4 x {{i}} = {% widthratio 4 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>5 x {{i}} = {% widthratio 5 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>6 x {{i}} = {% widthratio 6 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>7 x {{i}} = {% widthratio 7 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>8 x {{i}} = {% widthratio 8 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>9 x {{i}} = {% widthratio 9 1 i %}</p>
+                {% endfor %}
+            </li>
+            <li>
+                {% for i in list %}
+                <p>10 x {{i}} = {% widthratio 10 1 i %}</p>
+                {% endfor %}
+            </li>
+        </ul>
+        <form action="{% url 'home' %}">
+            <button type="submit" class="btn4">Назад</button>
+        </form>
+    </main>
 </body>
 </html>
