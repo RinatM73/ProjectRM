@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="">Главная</a>
+            <a href="{% url 'reguser' %}">Регистрация</a>
+            <a href="">Вход</a>
+            <a href="">Выход</a>
+        </nav>
+    </header>
+    <main>
+        <img src="http://vcechtonado1.narod.ru/welcome2.gif" alt="" class="img">
+    </main>
+</body>
+</html>

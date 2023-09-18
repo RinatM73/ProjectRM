@@ -1,0 +1,28 @@
+body {
+    background: #E9F1FA;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #134ac2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+img {
+    height: 200px;
+}
