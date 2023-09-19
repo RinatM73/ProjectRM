@@ -1,50 +1,31 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'home/style/style.css' %}">
-</head>
-<body>
-    <header class="header">
-        <div class="wrapper header-wrapper">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <nav>
-                <a href="#" class="link">Главная</a>
-                <a href="{% url 'blog' %}" class="link">Блог</a>
-                <a href="#" class="link">Портфолио</a>
-            </nav>
-            <div class="header-right">
-            <!-- Добавить код для проверки на авторизацию -->
-                <a href="#" class="link">Регистрация</a>
-                <a href="#" class="link link-primary">Вход</a>
-            <!-- Добавить код, если пользователь авторизировался -->
-                <a href="#" class="link link-primary">Выход</a>
-            </div>
-        </div>
-    </header>
+{% extends 'base.html' %}
+{% block content %}
     <main>
-        <!-- Добавить код для секции hero, отображать ее только после авторизации -->
+        <!-- Добавить код для секии hero, отображать ее только после авторизации -->
+
+        {% if request.user.username %}
         <section class="hero">
             <div class="wrapper hero-wrapper">
                 <img src="" alt="" class="my_image hero__my_image">
-                <span class="first_name">Имя: Текст Рыба</span>
+                <span class="first_name">Имя: {{user.username}}</span>
                 <span class="last_name">Фамилия: Текст Рыба</span>
                 <span class="my_age">Дата рождения: 01.06.2001(22)</span>
-                <p class="my_desc">О себе: </p>
-                <p class="my_desc">О себе: </p>
+                <p class="my_desc">О себе:</p>
+                <p class="my_desc">О себе:</p>
             </div>
         </section>
-        <!-- Добавить код, для отображения регистрации, только для не авторизованных пользователей -->
+
+
+        <!-- Добавить код, для отображения регистрации, только для не авторизованных пользователей  -->
+
+
+        {% else %}
         <section class="hero">
             <div class="wrapper hero-wrapper">
                 <h2>Регистрация нового пользователя</h2>
                 <a href="#" class="sign_link">Регистрация</a>
             </div>
         </section>
+        {% endif %}
     </main>
-</body>
-</html>
+{% endblock %}
