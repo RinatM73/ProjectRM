@@ -1,10 +1,26 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <link rel="stylesheet" href="{% static 'profile/profile.css' %}">
 </head>
 <body>
-
+    <header class="header">
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'profile' %}">Профиль</a>
+            {% if request.user.username %}
+            <a href="{% url 'logoutuser' %}">Выход</a>
+            {% else %}
+            <a href="{% url 'reguser' %}">Регистрация</a>
+            <a href="{% url 'loginuser' %}">Вход</a>
+            {% endif %}
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
